@@ -2,13 +2,26 @@ console.log('Conexão ok');
 
 document.addEventListener('click', function (getEvent) {
 	const elemento = getEvent.target;
-
 	console.log(elemento);
 
-	let numero = document.getElementById('numero');
-	let valor = 0;
+	const numero = document.getElementById('numero');
+	let count = 0;
+
+	function increment() {
+		count++;
+		numero.innerHTML = count;
+	}
+
+	function decrement() {
+		count--;
+		numero.innerHTML = count;
+	}
+
 	if (elemento === document.getElementById('adicionar')) {
-		valor = valor + 1;
-		numero.innerHTML = valor;
+		increment();
+	}
+
+	if (elemento === document.getElementById('subtrair')) {
+		decrement();
 	}
 });
