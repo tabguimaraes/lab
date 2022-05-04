@@ -1,0 +1,10 @@
+.flex-container {
+	display: flex;
+}
+
+.divs {
+	background-color: aqua;
+	border: 1px solid black;
+	margin: 5px;
+	padding: 10px;
+}
