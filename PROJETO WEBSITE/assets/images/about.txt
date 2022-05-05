@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Encode Sans SC
+- Font Author: Copyright 2020 The Encode Project Authors (https://github.com/thundernixon/Encode-Sans), with Reserved Font Name 'Encode Sans'.
+- Font Source: http://fonts.gstatic.com/s/encodesanssc/v7/jVyp7nLwCGzQ9zE7ZyRg0QRXHPZc_uUA6Kb3VJWLE_Pdtm7lcD6qvXT1HHhm8c9NOEEClIc.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))
