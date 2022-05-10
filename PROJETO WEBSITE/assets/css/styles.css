@@ -67,7 +67,14 @@ header {
 .banner button {
 	font-family: 'Mulish', serif;
 	color: white;
-	background-color: purple;
+	background: #fc466b; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #3f5efb, #fc466b); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#fc466b,
+		#3f5efb
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 	padding: 1rem;
 	width: 10rem;
 	border: 1px;
