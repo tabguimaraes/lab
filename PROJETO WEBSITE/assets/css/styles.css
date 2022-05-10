@@ -17,6 +17,29 @@ font-family: 'Mulish', sans-serif;
 * {
 	margin: 0;
 	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+.hamburguer {
+	/* background-color: #fc466b; */
+	width: 2rem;
+	height: 2rem;
+	position: fixed;
+	z-index: 100;
+	right: 2rem;
+	top: 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	cursor: pointer;
+}
+
+.line {
+	width: 100%;
+	height: 0.1rem;
+	background-color: white;
+	box-shadow: 0.1rem 0.1rem 1px black;
 }
 
 header {
@@ -112,4 +135,28 @@ header {
 		transform: translateY(0) rotateY(0);
 		opacity: 1;
 	}
+}
+
+.sidebar {
+	width: 20rem;
+	height: 100vh;
+	background-color: white;
+	position: fixed;
+	top: 0;
+	right: 0;
+}
+
+.menu {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.menu-item {
+	text-align: center;
+}
+
+.menu-link {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
