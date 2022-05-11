@@ -39,6 +39,12 @@ font-family: 'Mulish', sans-serif;
 	flex-direction: column;
 	justify-content: space-evenly;
 	cursor: pointer;
+	transition: 0.6s;
+}
+
+.show-menu .hamburguer {
+	right: 16rem;
+	transition: 0.6s;
 }
 
 .line {
@@ -82,7 +88,7 @@ header {
 .banner {
 	position: absolute;
 	top: 30%;
-	left: 15%;
+	left: 10%;
 }
 
 .banner h1 {
@@ -129,8 +135,9 @@ header {
 	opacity: 0;
 }
 
-.banner button:hover {
-	opacity: 0.7; /* Não está funcionando corretamente. Verificar*/
+.botao-banner:hover {
+	/* Não está funcionando, por que o browser está considerando apenas os valores do keyframes (opacity:1)*/
+	opacity: 0.9;
 }
 
 @keyframes moveBanner {
@@ -139,7 +146,7 @@ header {
 	}
 	100% {
 		transform: translateY(0) rotateY(0);
-		opacity: 1;
+		opacity: 0.9;
 	}
 }
 
@@ -153,7 +160,7 @@ header {
 	transition: all 0.5s;
 }
 
-.sidebar.show-menu {
+.show-menu .sidebar {
 	right: 0;
 }
 
@@ -190,8 +197,8 @@ header {
 }
 
 .social-media i {
-	background-color: #6a3093;
-	color: white;
+	/* background-color: #6a3093; */
+	color: #6a3093;
 	height: 2.5rem;
 	width: 2.5rem;
 	font-size: 2rem;
@@ -203,5 +210,6 @@ header {
 }
 
 .social-media i:hover {
-	background-color: #a044ff;
+	/* background-color: #a044ff; */
+	color: #a044ff;
 }
