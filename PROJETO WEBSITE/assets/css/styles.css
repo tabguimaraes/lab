@@ -138,6 +138,7 @@ header {
 .botao-banner:hover {
 	/* Não está funcionando, por que o browser está considerando apenas os valores do keyframes (opacity:1)*/
 	opacity: 0.9;
+	font-weight: 600;
 }
 
 @keyframes moveBanner {
@@ -172,7 +173,7 @@ header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: #6a3093;
+	background-color: #a044ff;
 	color: white;
 	font-family: var(--font-action);
 	opacity: 0;
@@ -184,12 +185,13 @@ header {
 .show-menu .hamburguer:hover span {
 	opacity: 1;
 	transition: 2.5s;
+	/* background-color: #a044ff; */
 }
 
 .hamburguer span::before {
 	content: '';
 	position: absolute;
-	border-right: 0.5rem solid #6a3093;
+	border-right: 0.5rem solid #a044ff;
 	border-top: 0.5rem solid transparent;
 	border-left: 0.5rem solid transparent;
 	border-bottom: 0.5rem solid transparent;
@@ -217,6 +219,7 @@ header {
 
 .menu-link:hover {
 	color: #6a3093;
+	font-weight: 600;
 }
 
 .social-media {
