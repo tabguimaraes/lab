@@ -177,6 +177,8 @@ header {
 	font-family: var(--font-action);
 	opacity: 0;
 	cursor: default;
+	border-radius: 5px;
+	font-weight: 500;
 }
 
 .show-menu .hamburguer:hover span {
