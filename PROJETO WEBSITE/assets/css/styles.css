@@ -234,7 +234,8 @@ header {
 
 .social-media i {
 	/* background-color: #6a3093; */
-	color: #6a3093;
+	/* color: #6a3093; */
+	color: #555;
 	height: 2.5rem;
 	width: 2.5rem;
 	font-size: 2rem;
