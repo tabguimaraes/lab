@@ -164,6 +164,36 @@ header {
 	right: 0;
 }
 
+.hamburguer span {
+	position: absolute;
+	left: 3rem;
+	height: 2rem;
+	width: 6rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #6a3093;
+	color: white;
+	font-family: var(--font-action);
+	opacity: 0;
+	cursor: default;
+}
+
+.show-menu .hamburguer:hover span {
+	opacity: 1;
+	transition: 2.5s;
+}
+
+.hamburguer span::before {
+	content: '';
+	position: absolute;
+	border-right: 0.5rem solid #6a3093;
+	border-top: 0.5rem solid transparent;
+	border-left: 0.5rem solid transparent;
+	border-bottom: 0.5rem solid transparent;
+	left: -1rem;
+}
+
 .menu {
 	position: absolute;
 	top: 40%;
