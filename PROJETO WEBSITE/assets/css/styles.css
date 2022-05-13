@@ -159,6 +159,8 @@ header {
 	top: 0;
 	right: -20rem;
 	transition: all 0.5s;
+	/*causa barras pretas na imagem de fundo ao recolher o menu lateral quando a opção de opacidade está ativada*/
+	/* opacity: 0.99;  */
 }
 
 .show-menu .sidebar {
@@ -249,4 +251,16 @@ header {
 .social-media i:hover {
 	/* background-color: #a044ff; */
 	color: #a044ff;
+}
+
+.sessao-conhecimentos {
+	background-color: rgb(245, 245, 245);
+}
+
+.sessao-header h1 {
+	text-align: center;
+	font-family: var(--font-primary);
+	font-size: 2.5rem;
+	font-weight: 100;
+	color: #555;
 }
