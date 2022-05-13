@@ -214,11 +214,12 @@ header {
 	font-family: var(--font-action);
 	font-size: 2rem;
 	color: #555;
-	transition: color 1s;
+	/* transition: color 1s; */
 }
 
 .menu-link:hover {
-	color: #6a3093;
+	/* color: #6a3093; */
+	color: #a044ff;
 	font-weight: 600;
 }
 
@@ -233,7 +234,8 @@ header {
 
 .social-media i {
 	/* background-color: #6a3093; */
-	color: #6a3093;
+	/* color: #6a3093; */
+	color: #555;
 	height: 2.5rem;
 	width: 2.5rem;
 	font-size: 2rem;
