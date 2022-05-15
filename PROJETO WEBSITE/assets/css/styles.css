@@ -633,7 +633,7 @@ header {
 	margin-top: 4rem;
 	font-family: var(--font-secundary);
 	font-size: 1.5rem;
-	font-weight: bold;
+	font-weight: bolder;
 }
 
 .sessao-orcamento input {
@@ -645,6 +645,7 @@ header {
 
 .sessao-orcamento label:hover {
 	color: #a044ff;
+
 }
 
 .sessao-orcamento input[type='number'] {
