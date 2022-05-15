@@ -568,7 +568,12 @@ header {
 
 .btn-submit:hover {
 	font-weight: 600;
-	font-size: .8rem;
+	font-size: 0.8rem;
+}
+
+.btn-submit:focus {
+	font-weight: 600;
+	font-size: 0.8rem;
 }
 
 .input-group textarea {
