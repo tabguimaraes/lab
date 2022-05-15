@@ -660,7 +660,7 @@ header {
 }
 
 .sessao-orcamento button {
-	width: 100%;
+	width: 50%;
 	height: 2.5rem;
 	background: #fc466b; /* fallback for old browsers */
 	background: -webkit-linear-gradient(to right, #3f5efb, #fc466b); /* Chrome 10-25, Safari 5.1-6 */
@@ -676,6 +676,7 @@ header {
 	font-size: 1rem;
 	box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, 0.4);
 	grid-column: 2;
+	margin: auto;
 }
 
 .sessao-orcamento button:hover {
