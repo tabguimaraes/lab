@@ -121,6 +121,7 @@ header {
 	color: white;
 	text-transform: uppercase;
 	letter-spacing: 0.1rem;
+	font-size: 1rem;
 	font-family: var(--font-action);
 	background: #fc466b; /* fallback for old browsers */
 	background: -webkit-linear-gradient(to right, #3f5efb, #fc466b); /* Chrome 10-25, Safari 5.1-6 */
@@ -131,7 +132,7 @@ header {
 	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 	padding: 1rem 2rem;
-	width: 10rem;
+	width: 11rem;
 	border: 1px;
 	border-radius: 5px;
 	cursor: pointer;
@@ -562,13 +563,13 @@ header {
 	text-transform: uppercase;
 	letter-spacing: 0.1rem;
 	font-family: var(--font-action);
-	font-size: 0.7rem;
+	font-size: 1rem;
 	box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, 0.4);
 }
 
 .btn-submit:hover {
 	font-weight: 600;
-	font-size: 0.8rem;
+	/* font-size: 0.8rem; */
 }
 
 .btn-submit:focus {
@@ -640,12 +641,10 @@ header {
 	margin-top: 4rem;
 	align-items: center;
 	align-content: center;
-	
 }
 
 .sessao-orcamento label:hover {
 	color: #a044ff;
-
 }
 
 .sessao-orcamento input[type='number'] {
