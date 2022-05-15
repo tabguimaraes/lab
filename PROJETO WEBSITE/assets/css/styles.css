@@ -32,7 +32,7 @@ font-family: 'Mulish', sans-serif;
 	width: 2rem;
 	height: 2rem;
 	position: fixed;
-	z-index: 100;
+	z-index: 200;
 	right: 2rem;
 	top: 2rem;
 	display: flex;
@@ -152,6 +152,7 @@ header {
 }
 
 .sidebar {
+	z-index: 100;
 	width: 20rem;
 	height: 100vh;
 	background-color: white;
