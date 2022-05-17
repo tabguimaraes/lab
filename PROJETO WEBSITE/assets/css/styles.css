@@ -35,6 +35,23 @@ body {
 	background-color: rgb(245, 245, 245);
 }
 
+header {
+	width: 100%;
+	height: 100vh;
+	overflow: hidden; /* EVITA QUE OS ELEMENTOS DO HEADER ULTRAPASSEM O TAMANHO DA TELA*/
+	position: relative;
+}
+
+footer {
+	width: 100%;
+	height: 3rem;
+	background-color: #17181b;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* ÍCONE MENU */
 .hamburguer {
 	/* background-color: #fc466b; */
 	width: 2rem;
@@ -50,8 +67,41 @@ body {
 	transition: 0.6s;
 }
 
+.hamburguer span {
+	position: absolute;
+	left: 3rem;
+	height: 2rem;
+	width: 6rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #a044ff;
+	color: white;
+	font-family: var(--font-action);
+	opacity: 0;
+	cursor: default;
+	border-radius: 5px;
+	font-weight: 500;
+}
+
+.show-menu .hamburguer:hover span {
+	opacity: 1;
+	transition: 2.5s;
+	/* background-color: #a044ff; */
+}
+
+.hamburguer span::before {
+	content: '';
+	position: absolute;
+	border-right: 0.5rem solid #a044ff;
+	border-top: 0.5rem solid transparent;
+	border-left: 0.5rem solid transparent;
+	border-bottom: 0.5rem solid transparent;
+	left: -1rem;
+}
+
 .show-menu .hamburguer {
-	right: 16rem;
+	right: 20rem;
 	transition: 0.6s;
 }
 
@@ -62,13 +112,78 @@ body {
 	box-shadow: 0.1rem 0.1rem 1px black;
 }
 
-header {
-	width: 100%;
+/*MENU LATERAL*/
+.sidebar {
+	z-index: 100;
+	width: 20rem;
 	height: 100vh;
-	overflow: hidden; /* EVITA QUE OS ELEMENTOS DO HEADER ULTRAPASSEM O TAMANHO DA TELA*/
-	position: relative;
+	background-color: white;
+	position: fixed;
+	top: 0;
+	right: -20rem;
+	transition: all 0.5s;
+	/*causa barras pretas na imagem de fundo ao recolher o menu lateral quando a opção de opacidade está ativada*/
+	/* opacity: 0.99;  */
 }
 
+.show-menu .sidebar {
+	right: 0;
+}
+
+.menu {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.menu-item {
+	text-align: center;
+	margin-bottom: 0.5rem;
+}
+
+.menu-link {
+	font-family: var(--font-action);
+	font-size: 2rem;
+	color: #555;
+	/* transition: color 1s; */
+}
+
+.menu-link:hover {
+	/* color: #6a3093; */
+	color: #a044ff;
+	font-weight: 600;
+}
+
+.social-media {
+	position: absolute;
+	bottom: 2rem;
+	width: 100%;
+	/* background-color: rgba(255, 0, 0, 0.5); */
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.social-media i {
+	/* background-color: #6a3093; */
+	/* color: #6a3093; */
+	color: #555;
+	height: 2.5rem;
+	width: 2.5rem;
+	font-size: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	transition: background-color 0.3s;
+}
+
+.social-media i:hover {
+	/* background-color: #a044ff; */
+	color: #a044ff;
+}
+
+/*Página Inicial*/
 .img-wrapper {
 	width: 100%;
 	height: 100%;
@@ -160,113 +275,7 @@ header {
 	}
 }
 
-.sidebar {
-	z-index: 100;
-	width: 20rem;
-	height: 100vh;
-	background-color: white;
-	position: fixed;
-	top: 0;
-	right: -20rem;
-	transition: all 0.5s;
-	/*causa barras pretas na imagem de fundo ao recolher o menu lateral quando a opção de opacidade está ativada*/
-	/* opacity: 0.99;  */
-}
-
-.show-menu .sidebar {
-	right: 0;
-}
-
-.hamburguer span {
-	position: absolute;
-	left: 3rem;
-	height: 2rem;
-	width: 6rem;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: #a044ff;
-	color: white;
-	font-family: var(--font-action);
-	opacity: 0;
-	cursor: default;
-	border-radius: 5px;
-	font-weight: 500;
-}
-
-.show-menu .hamburguer:hover span {
-	opacity: 1;
-	transition: 2.5s;
-	/* background-color: #a044ff; */
-}
-
-.hamburguer span::before {
-	content: '';
-	position: absolute;
-	border-right: 0.5rem solid #a044ff;
-	border-top: 0.5rem solid transparent;
-	border-left: 0.5rem solid transparent;
-	border-bottom: 0.5rem solid transparent;
-	left: -1rem;
-}
-
-.menu {
-	position: absolute;
-	top: 40%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-
-.menu-item {
-	text-align: center;
-	margin-bottom: 0.5rem;
-}
-
-.menu-link {
-	font-family: var(--font-action);
-	font-size: 2rem;
-	color: #555;
-	/* transition: color 1s; */
-}
-
-.menu-link:hover {
-	/* color: #6a3093; */
-	color: #a044ff;
-	font-weight: 600;
-}
-
-.social-media {
-	position: absolute;
-	bottom: 2rem;
-	width: 100%;
-	/* background-color: rgba(255, 0, 0, 0.5); */
-	display: flex;
-	justify-content: space-evenly;
-}
-
-.social-media i {
-	/* background-color: #6a3093; */
-	/* color: #6a3093; */
-	color: #555;
-	height: 2.5rem;
-	width: 2.5rem;
-	font-size: 2rem;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border-radius: 50%;
-	transition: background-color 0.3s;
-}
-
-.social-media i:hover {
-	/* background-color: #a044ff; */
-	color: #a044ff;
-}
-
-.sessao-conhecimentos {
-	background-color: rgb(245, 245, 245);
-}
-
+/*PADRÃO PARA OS HEADERS DAS PÁGINAS*/
 .sessao-header {
 	display: flex;
 	align-items: center;
@@ -287,6 +296,10 @@ header {
 .sessao-header h1:hover {
 	color: #a044ff;
 	border-bottom: 3px solid #a044ff;
+}
+
+.sessao-conhecimentos {
+	background-color: rgb(245, 245, 245);
 }
 
 .conhecimentos {
@@ -691,15 +704,6 @@ header {
 .sessao-orcamento button:hover {
 	font-weight: 600;
 	/* font-size: 1.1rem; */
-}
-
-footer {
-	width: 100%;
-	height: 3rem;
-	background-color: #17181b;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
 
 .footer-content {
