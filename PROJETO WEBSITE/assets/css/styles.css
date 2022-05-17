@@ -260,6 +260,10 @@ footer {
 	opacity: 0;
 }
 
+.banner button a {
+	color: white;
+}
+
 .botao-banner:hover {
 	/* Não está funcionando, por que o browser está considerando apenas os valores do keyframes (opacity:1)*/
 	opacity: 0.9;
