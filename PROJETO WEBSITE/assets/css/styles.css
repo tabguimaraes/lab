@@ -619,7 +619,7 @@ footer {
 
 .orcamento-wrapper {
 	width: 60%;
-	height: 80%;
+	max-height: 80%;
 	margin-top: 4rem;
 	background: rgba(238, 238, 238, 0.85);
 	border-radius: 10px;
