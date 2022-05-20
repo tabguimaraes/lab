@@ -613,12 +613,13 @@ footer {
 
 .sessao-orcamento {
 	width: 100%;
-	height: 100vh;
+	/* height: 100vh; */
 	object-fit: cover;
 	background: url('../images/bg-orcamento.jpg');
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-wrap: wrap;
 }
 
 .orcamento-wrapper {
@@ -629,6 +630,7 @@ footer {
 	border-radius: 10px;
 	box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0, 0.5);
 	position: relative;
+	flex-wrap: wrap;
 	/* font-family: var(--font-action); */
 }
 
@@ -654,8 +656,8 @@ footer {
 	margin: 4rem;
 	display: grid;
 	grid-template-columns: auto 1fr;
-	column-gap: 2rem;
-	row-gap: 2rem;
+	column-gap: 2vh;
+	/* row-gap: 1vh; */
 }
 
 .sessao-orcamento label {
@@ -710,6 +712,29 @@ footer {
 .sessao-orcamento button:hover {
 	font-weight: 600;
 	/* font-size: 1.1rem; */
+}
+
+.group-layout {
+	/* align-items: center;
+	align-content: center;
+	vertical-align: middle; */
+	/* margin-top: 0; */
+	/* margin: auto; */
+	border: 1px solid black;
+}
+
+.layout-radio {
+	align-content: center;
+	align-self: center;
+	align-items: center;
+	/* text-align: center; */
+	/* margin: auto; */
+	/* padding: 0; */
+}
+
+#layout-sim,
+#layout-nao {
+	margin-top: 2vw;
 }
 
 .footer-content {
