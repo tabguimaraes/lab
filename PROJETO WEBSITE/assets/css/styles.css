@@ -632,41 +632,26 @@ footer {
 	/* font-family: var(--font-action); */
 }
 
-.sessao-orcamento h1 {
-	/* margin-bottom: 5rem; */
-	position: absolute;
-	top: -2.5rem;
-	left: 2rem;
-	background: #fc466b; /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #3f5efb, #fc466b); /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #fc466b, #3f5efb);
-	padding: 0 3rem;
-	color: white;
-	font-family: var(--font-primary);
-	font-size: 3rem;
-	font-weight: 100;
-	box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0, 0.5);
-	border-radius: 10px;
-	opacity: 0.98;
-}
-
 .sessao-orcamento form {
-	margin: 4rem;
+	margin: 8vw 4vw 4vw 4vw;
 	display: grid;
 	grid-template-columns: auto 1fr;
 	column-gap: 2rem;
 	row-gap: 2rem;
+	align-items: center;
+	align-content: center;
 }
 
 .sessao-orcamento label {
-	margin-top: 4rem;
+	/* margin-top: 4rem; */
 	font-family: var(--font-secundary);
 	font-size: 1.5rem;
 	font-weight: bolder;
 }
 
 .sessao-orcamento input {
-	margin-top: 4rem;
+	/* margin-top: 4rem; */
+	margin: 2vw 0;
 	align-items: center;
 	align-content: center;
 }
@@ -710,6 +695,33 @@ footer {
 .sessao-orcamento button:hover {
 	font-weight: 600;
 	/* font-size: 1.1rem; */
+}
+
+.sessao-orcamento h1 {
+	/* margin-bottom: 5rem; */
+	position: absolute;
+	top: -2.5rem;
+	left: 2rem;
+	background: #fc466b; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #3f5efb, #fc466b); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #fc466b, #3f5efb);
+	padding: 0 3rem;
+	color: white;
+	font-family: var(--font-primary);
+	font-size: 3rem;
+	font-weight: 100;
+	box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0, 0.5);
+	border-radius: 10px;
+	opacity: 0.98;
+}
+
+#qtde {
+	margin: 0;
+}
+
+#layout-sim,
+#layoute-nao {
+	margin-bottom: 1.5vw;
 }
 
 .footer-content {
