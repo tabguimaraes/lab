@@ -370,6 +370,7 @@ footer {
 
 .conhecimento-text {
 	font-family: var(--font-secundary);
+	font-weight: 600;
 	margin-top: 1vw;
 }
 
