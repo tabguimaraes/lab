@@ -399,7 +399,7 @@ footer {
 	align-items: center;
 	justify-content: center;
 	width: 18vw;
-	/* height: 25vw; */
+	height: 60vh;
 	position: relative;
 	font-size: 1vw;
 }
@@ -617,7 +617,7 @@ footer {
 
 .sessao-orcamento {
 	/* width: 100vw; */
-	height: 100vh;
+	height: 96vh;
 	object-fit: cover;
 	background: url('../images/bg-orcamento.jpg');
 	display: flex;
