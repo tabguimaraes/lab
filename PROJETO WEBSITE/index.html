@@ -20,13 +20,14 @@
 				<span>Fechar</span>
 			</div>
 			<header id="home">
+				<div class="bg-images home-img"></div>
 				<div class="img-wrapper">
-					<img src="./assets/images/bg.jpg" alt="" srcset="" />
+					<!-- <img src="./assets/images/bg.jpg" alt="" srcset="" /> -->
 				</div>
 				<div class="banner">
 					<h1>Web Developer & Front End Designer</h1>
 					<p>Tiago Guimarães</p>
-					<button class="botao-banner"><a href="#conhecimentos">Saiba mais</a></button>
+					<button class="buttons bt-banner"><a href="#conhecimentos">Saiba mais</a></button>
 				</div>
 			</header>
 			<aside class="sidebar">
@@ -146,7 +147,7 @@
 							<h2>ToDo List</h2>
 							<h3>JavaScript</h3>
 							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deleniti molestias</p>
-							<button>Saiba mais</button>
+							<button class="buttons bt-card">Saiba mais</button>
 						</div>
 					</div>
 					<div class="card">
@@ -157,7 +158,7 @@
 							<h2>Maratona</h2>
 							<h3>HTML, CSS</h3>
 							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deleniti molestias</p>
-							<button>Saiba mais</button>
+							<button class="buttons bt-card">Saiba mais</button>
 						</div>
 					</div>
 					<div class="card">
@@ -168,13 +169,13 @@
 							<h2>Casa Bela</h2>
 							<h3>HTML</h3>
 							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deleniti molestias</p>
-							<button>Saiba mais</button>
+							<button class="buttons bt-card">Saiba mais</button>
 						</div>
 					</div>
 				</div>
 			</section>
 			<section class="sessao-contato" id="contato">
-				<img src="./assets/images/bg_contato1.jpg" alt="" class="bg-class">
+				<div class="bg-images contato-img"></div>
 				<div class="contato-wrapper">
 					<div class="contato-left">
 						<img src="./assets/images/contato.jpg" alt="" />
@@ -194,12 +195,13 @@
 								<textarea class="field" id="mensagem"></textarea>
 								<label for="mensagem" class="field-label">Mensagem</label>
 							</div>
-							<button type="submit" class="btn-submit">Enviar</button>
+							<button type="submit" class="buttons bt-contato">Enviar</button>
 						</form>
 					</div>
 				</div>
 			</section>
 			<section class="sessao-orcamento" id="orcamento">
+				<div class="bg-images orcamento-img"></div>
 				<div class="orcamento-wrapper">
 					<h1>Faça um orçamento</h1>
 					<form>
@@ -220,7 +222,7 @@
 						</div>
 						<label for="prazo">Prazo</label>
 						<input type="range" name="prazo" id="prazo" />
-						<button type="submit">Enviar</button>
+						<button class="buttons bt-orcamento" type="submit">Enviar</button>
 					</form>
 				</div>
 			</section>
@@ -242,7 +244,7 @@
 					</ul>
 				</div>
 			</footer>
-			<a href="#home" id="link-topo">
+			<a href="#home" class="buttons bt-topo" id="link-topo">
 				<i class="fas fa-arrow-up"></i>
 			</a>
 		</div>
