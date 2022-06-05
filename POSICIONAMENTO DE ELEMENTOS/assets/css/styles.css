@@ -1,11 +1,34 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
 .flex-container {
 	display: flex;
-	flex-direction: row-reverse;
+	justify-content: center;
+}
+
+.wrapper {
+	width: 200px;
+	height: 200px;
+	border: 1px solid black;
+	margin: 5px;
+	position: absolute;
+	/* display: flex;
+	justify-content: center;
+	align-items: center; */
 }
 
 .divs {
-	background-color: aqua;
-	border: 1px solid black;
-	margin: 5px;
-	padding: 10px;
+	width: 100%;
+	height: 100%;
+	background-image: url('../images/bg_contato1.jpg');
+	background-size: cover;
+	filter: blur(1px);
+}
+
+p {
+	position: inherit;
+	top: 20px;
 }
