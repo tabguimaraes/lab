@@ -1,5 +1,3 @@
-console.log('JS ok');
-
 document
 	.querySelector('.hamburguer')
 	.addEventListener('click', () => document.querySelector('.container').classList.toggle('show-menu'));
@@ -24,8 +22,15 @@ function atualizarPreco() {
 	const js = document.querySelector('#js').checked;
 
 	if (qtde < 0) {
+		preco.style.fontSize = '1.7vw';
+		preco.style.color = '#fd2853';
+		preco.style.fontWeight = 'bolder';
 		preco.innerHTML = 'Quantidade deve ser maior que 0.';
 		return;
+	} else {
+		preco.style.fontSize = '1.7vw';
+		preco.style.color = '';
+		preco.style.fontWeight = '';
 	}
 
 	let informaPreco = qtde * taxaPagina;
@@ -52,3 +57,5 @@ function atualizarPreco() {
 
 	inserePreco();
 }
+
+//Mais um passo em frente, Miguel. Papai te ama. 23/06/2022
