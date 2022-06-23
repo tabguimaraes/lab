@@ -23,6 +23,11 @@ function atualizarPreco() {
 	const infoPrazo = document.querySelector('#infoPrazo');
 	const js = document.querySelector('#js').checked;
 
+	if (qtde < 0) {
+		preco.innerHTML = 'Quantidade deve ser maior que 0.';
+		return;
+	}
+
 	let informaPreco = qtde * taxaPagina;
 
 	const taxaUrgencia = 1 - prazo * 0.1;
@@ -36,8 +41,6 @@ function atualizarPreco() {
 	if (js) informaPreco *= taxaScript;
 
 	if (layoutSim) informaPreco += taxaLayout;
-
-	if (qtde < 0) preco.innerHTML = 'Quantidade deve ser maior que 0.';
 
 	if (prazo < 2) {
 		infoPrazo.innerHTML = `Prazo: ${prazo} semana`;
