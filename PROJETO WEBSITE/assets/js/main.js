@@ -12,32 +12,36 @@ const taxaUrgencia = 1.1;
 
 document.querySelector('#qtde').addEventListener('change', atualizarPreco);
 document.querySelector('#js').addEventListener('change', atualizarPreco);
-document.querySelector('#layout-sim').addEventListener('click', atualizarPreco);
+document.querySelector('#layout-sim').addEventListener('change', atualizarPreco);
 document.querySelector('#layout-nao').addEventListener('change', atualizarPreco);
+document.querySelector('#prazo').addEventListener('change', atualizarPreco);
 
 function atualizarPreco() {
 	const qtde = document.querySelector('#qtde').value;
 	const preco = document.querySelector('#preco');
 	const layoutSim = document.querySelector('#layout-sim').checked;
-	const layoutNao = document.querySelector('#layout-nao');
+	const prazo = document.querySelector('#prazo').value;
+	const infoPrazo = document.querySelector('#infoPrazo');
 	const js = document.querySelector('#js').checked;
 
 	let informaPreco = qtde * taxaPagina;
-	preco.innerHTML = `R$ ${informaPreco.toFixed(2)}`;
+
+	inserePreco();
+
+	//FUNÇÃO INSERIR PREÇO
+	function inserePreco() {
+		preco.innerHTML = `R$ ${informaPreco.toFixed(2)}`;
+		return;
+	}
 
 	if (js) {
 		informaPreco *= taxaScript;
-		preco.innerHTML = `R$ ${informaPreco.toFixed(2)}`;
+		inserePreco();
 	}
 
 	if (layoutSim) {
-		informaPreco = informaPreco + taxaLayout;
-		preco.innerHTML = `R$ ${informaPreco.toFixed(2)}`;
-	}
-
-	if (layoutNao) {
-		informaPreco = informaPreco - (taxaLayout - taxaLayout);
-		preco.innerHTML = `R$ ${informaPreco.toFixed(2)}`;
+		informaPreco += taxaLayout;
+		inserePreco();
 	}
 
 	if (qtde < 0) {
@@ -45,4 +49,10 @@ function atualizarPreco() {
 	}
 
 	console.log(qtde);
+
+	if (prazo < 2) {
+		infoPrazo.innerHTML = `Prazo: ${prazo} semana`;
+	} else {
+		infoPrazo.innerHTML = `Prazo: ${prazo} semanas`;
+	}
 }
