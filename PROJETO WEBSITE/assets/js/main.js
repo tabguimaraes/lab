@@ -8,7 +8,6 @@ document
 const taxaPagina = 100;
 const taxaScript = 1.1;
 const taxaLayout = 500;
-const taxaUrgencia = 1.1;
 
 document.querySelector('#qtde').addEventListener('change', atualizarPreco);
 document.querySelector('#js').addEventListener('change', atualizarPreco);
@@ -26,7 +25,7 @@ function atualizarPreco() {
 
 	let informaPreco = qtde * taxaPagina;
 
-	inserePreco();
+	const taxaUrgencia = 1 - prazo * 0.1;
 
 	//FUNÇÃO INSERIR PREÇO
 	function inserePreco() {
@@ -34,25 +33,19 @@ function atualizarPreco() {
 		return;
 	}
 
-	if (js) {
-		informaPreco *= taxaScript;
-		inserePreco();
-	}
+	if (js) informaPreco *= taxaScript;
 
-	if (layoutSim) {
-		informaPreco += taxaLayout;
-		inserePreco();
-	}
+	if (layoutSim) informaPreco += taxaLayout;
 
-	if (qtde < 0) {
-		preco.innerHTML = 'Quantidade deve ser maior que 0.';
-	}
-
-	console.log(qtde);
+	if (qtde < 0) preco.innerHTML = 'Quantidade deve ser maior que 0.';
 
 	if (prazo < 2) {
 		infoPrazo.innerHTML = `Prazo: ${prazo} semana`;
 	} else {
 		infoPrazo.innerHTML = `Prazo: ${prazo} semanas`;
 	}
+
+	informaPreco *= 1 + taxaUrgencia;
+
+	inserePreco();
 }
