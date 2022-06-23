@@ -181,6 +181,7 @@ a {
 	cursor: default;
 	border-radius: 5px;
 	font-weight: 500;
+	transition: 1.5s;
 }
 
 .show-menu .hamburguer:hover span {
@@ -627,8 +628,8 @@ a {
 .sessao-orcamento form {
 	margin: 4.5vw 4vw 1vw 4vw;
 	display: grid;
-	grid-template-columns: auto 1fr;
-	column-gap: 2vw;
+	grid-template-columns: 1fr 1fr;
+	/* column-gap: 2vw; */
 	row-gap: 1vw;
 	align-items: center;
 	align-content: center;
@@ -715,4 +716,14 @@ a {
 
 .social-list ul {
 	display: flex;
+}
+
+.footer-content span {
+	color: #17181b;
+	transition: 500ms;
+}
+
+.footer-content span:hover {
+	color: #eee;
+	transition: 500ms;
 }
