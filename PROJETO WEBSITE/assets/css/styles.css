@@ -49,6 +49,11 @@ footer {
 	align-items: center;
 }
 
+/* SOLUÇÃO DE CONTORNO PARA A NOVA VERSÃO DO CHROME, FIREFOX E EDGE, QUE COLOCA ALINHAMENTO CENTER PARA ELEMENTO INPUT CHECKBOX */
+input[type='checkbox'] {
+	width: 13px;
+}
+
 /* IMAGENS DE FUNDO */
 
 .bg-images {
