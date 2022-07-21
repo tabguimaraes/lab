@@ -732,3 +732,58 @@ a {
 	color: #eee;
 	transition: 500ms;
 }
+
+@media (max-width: 950px) {
+	.banner h1 {
+		font-size: 6.5vw;
+		line-height: 4.5vh;
+		margin-bottom: 2.5vw;
+	}
+
+	.banner p {
+		font-size: 5.5vw;
+		margin-bottom: 2.5vw;
+	}
+
+	.buttons {
+		font-size: 3.5vw;
+	}
+
+	.sessao-header h1 {
+		font-size: 6.5vw;
+	}
+
+	.conhecimentos {
+		grid-template-columns: repeat(16, 1fr);
+		grid-template-rows: repeat(auto, 4vw);
+		height: 92%;
+	}
+
+	.conhecimento-header h3 {
+		font-size: 4.5vw;
+	}
+
+	.conhecimento-text {
+		font-size: 3.5vw;
+	}
+
+	.fab {
+		font-size: 4.5vw;
+	}
+
+	.conhecimento:nth-child(1) {
+		grid-column: 2/7;
+		grid-row: 1/2;
+	}
+
+	.conhecimento:nth-child(2) {
+		grid-column: 2/7;
+		grid-row: 2/3;
+	}
+
+	.conhecimentos-img-wrapper {
+		grid-column: 6/13;
+		grid-row: 6/7;
+		width: 100%;
+	}
+}
