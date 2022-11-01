@@ -353,13 +353,44 @@ a {
 
 .grid-conhecimentos {
   display: grid;
-  grid-template-columns: 300px 300px 300px;
+  grid-template-columns: repeat(10, 100px);
+  gap: 20px;
   /* grid-template-rows: repeat(6, 4vw); */
-  justify-items: center;
+  justify-content: center;
   /* row-gap: 2vw; */
   font-size: 1vw;
   /*Testar visualização*/
   /* height: 100vh; */
+}
+
+.coluna-esquerda {
+  grid-column: 1 / 5;
+}
+
+.coluna-meio {
+  grid-column: 5 / 7;
+  place-content: center;
+}
+.coluna-direita {
+  grid-column: 7 / -1;
+}
+
+.grid-esquerda {
+  display: grid;
+  grid-template-columns: repeat(12, 40px);
+  row-gap: 60px;
+}
+
+.html {
+  grid-column: 1 / 12;
+}
+
+.css {
+  grid-column: 3/12;
+}
+
+.design {
+  grid-column: 1/ 12;
 }
 
 /* .conhecimento:nth-child(1) {
@@ -396,6 +427,7 @@ a {
   display: flex;
   align-items: center;
   color: #4b4b4b;
+  margin-bottom: 20px;
 }
 
 .conhecimento-header i {
@@ -427,6 +459,7 @@ a {
 .conhecimentos-img-wrapper img {
   object-fit: cover;
   max-width: 100%;
+  
 }
 
 /*  SESSÃO PROJETOS */
@@ -793,15 +826,4 @@ a {
     grid-row: 6/7;
     width: 100%;
   }
-}
-
-.coluna-esquerda {
-  grid-column: 1;
-}
-
-.coluna-meio {
-  grid-column: 2;
-}
-.coluna-direita {
-  grid-column: 3;
 }
