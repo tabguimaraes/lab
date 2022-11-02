@@ -359,17 +359,17 @@ a {
 
 .coluna-esquerda {
   grid-column: 1 / 6;
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  row-gap: 40px;
 }
 
 .coluna-meio {
   grid-column: 6 / 11;
-  place-content: center;
-}
-.coluna-direita {
-  grid-column: 11 / 17;
 }
 
-.grid-esquerda {
+.coluna-direita {
+  grid-column: 11 / 17;
   display: grid;
   grid-template-columns: repeat(16, 1fr);
   row-gap: 40px;
@@ -385,12 +385,6 @@ a {
 
 .design {
   grid-column: 2/ 16;
-}
-
-.grid-direita {
-  display: grid;
-  grid-template-columns: repeat(16, 1fr);
-  row-gap: 40px;
 }
 
 .js {
@@ -429,7 +423,6 @@ a {
 .conhecimento-text {
   font-family: var(--font-secundary);
   font-weight: 600;
-  /* margin-top: 1vw; */
 }
 
 .conhecimentos-img-wrapper {
