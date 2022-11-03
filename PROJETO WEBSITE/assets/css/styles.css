@@ -361,20 +361,19 @@ a {
   grid-column: 1 / 6;
   display: grid;
   grid-template-columns: repeat(16, 1fr);
-  /* row-gap: 40px; */
+  row-gap: 40px;
 }
 
 .coluna-meio {
   grid-column: 6 / 11;
   display: grid;
-  grid-template-rows: repeat(20, 25px);
+  grid-template-rows: repeat(25, 25px);
 }
 
 .coluna-direita {
   grid-column: 11 / 17;
   display: grid;
   grid-template-columns: repeat(16, 1fr);
-  /* row-gap: 40px; */
 }
 
 .html {
