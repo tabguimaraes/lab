@@ -327,7 +327,7 @@ a {
   align-items: center;
   justify-content: center;
   margin-top: 3vw;
-  margin-bottom: 2vw;
+  margin-bottom: 3.5vw;
 }
 
 .sessao-header h1 {
@@ -336,7 +336,7 @@ a {
   font-weight: 100;
   color: #555;
   border-bottom: 3px solid #555;
-  margin-bottom: 3.5vw;
+  /* margin-bottom: 3.5vw; */
 }
 
 .sessao-header h1:hover {
@@ -384,7 +384,7 @@ a {
 }
 
 .design {
-  grid-column: 2/ 16;
+  grid-column: 2/ 17;
 }
 
 .js {
