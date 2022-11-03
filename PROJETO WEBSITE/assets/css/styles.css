@@ -366,6 +366,8 @@ a {
 
 .coluna-meio {
   grid-column: 6 / 11;
+  display: grid;
+  grid-template-rows: repeat(10, 50px);
 }
 
 .coluna-direita {
@@ -427,6 +429,7 @@ a {
 
 .conhecimentos-img-wrapper {
   width: 100%;
+  grid-row: 2;
 }
 
 .conhecimentos-img-wrapper img {
