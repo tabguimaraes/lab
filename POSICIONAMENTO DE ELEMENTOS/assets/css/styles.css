@@ -1,34 +1,38 @@
 * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .flex-container {
-	display: flex;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .wrapper {
-	width: 200px;
-	height: 200px;
-	border: 1px solid black;
-	margin: 5px;
-	position: absolute;
-	/* display: flex;
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  margin: 5px;
+  position: absolute;
+  /* display: flex;
 	justify-content: center;
 	align-items: center; */
 }
 
 .divs {
-	width: 100%;
-	height: 100%;
-	background-image: url('../images/bg_contato1.jpg');
-	background-size: cover;
-	filter: blur(1px);
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/bg_contato1.jpg");
+  background-size: cover;
+  filter: blur(1px);
 }
 
 p {
-	position: inherit;
-	top: 20px;
+  position: absolute;
+  top: 20px;
+  left: -15px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: underline;
 }
