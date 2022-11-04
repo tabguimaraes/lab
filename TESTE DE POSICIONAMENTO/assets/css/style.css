@@ -1,0 +1,42 @@
+.grid {
+  display: grid;
+  grid-template-columns: 40px auto;
+  border: 1px solid black;
+  width: fit-content;
+  justify-content: center;
+  margin: auto;
+}
+
+h2 {
+  margin: 0;
+}
+
+.img-motor {
+  grid-area: 1 /1;
+}
+
+.img-velocidade {
+  grid-area: 3/1;
+}
+
+.img-rast {
+  grid-area: 5/1;
+}
+
+.p-motor,
+.p-velocidade,
+.p-rast,
+.h2-rast {
+  grid-column: 2;
+}
+
+img,
+h2,
+p {
+  margin-left: 5px;
+  padding: 10px;
+}
+
+p {
+  margin-top: 0;
+}
