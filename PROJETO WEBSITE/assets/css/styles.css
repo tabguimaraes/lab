@@ -817,3 +817,23 @@ a {
     grid-template-rows: repeat(20, 25px);
   }
 }
+
+@media (max-width: 800px) {
+  .coluna-meio {
+    display: none;
+  }
+
+  /* .conhecimento-text {
+    font-size: 1.2vw;
+    font-weight: 700;
+  }
+
+  .coluna-esquerda {
+    row-gap: 0px;
+    grid-template-rows: auto auto auto;
+  }
+
+  .coluna-meio {
+    grid-template-rows: repeat(20, 25px);
+  } */
+}
