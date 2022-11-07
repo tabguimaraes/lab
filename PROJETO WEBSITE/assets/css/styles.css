@@ -799,3 +799,21 @@ a {
     width: 100%;
   }
 }
+
+/* AJUSTE PARA TELAS DE NOTEBOOKS ATÉ 14' */
+
+@media (max-width: 1400px) {
+  .conhecimento-text {
+    font-size: 1.2vw;
+    font-weight: 700;
+  }
+
+  .coluna-esquerda {
+    row-gap: 0px;
+    grid-template-rows: auto auto auto;
+  }
+
+  .coluna-meio {
+    grid-template-rows: repeat(20, 25px);
+  }
+}
