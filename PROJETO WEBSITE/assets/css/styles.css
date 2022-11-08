@@ -366,13 +366,11 @@ a {
   display: grid;
   grid-template-rows: 3;
   grid-template-columns: repeat(10, 1fr);
-  row-gap: 40px;
 }
 
 .coluna-meio {
   grid-column: 11 / 20;
   display: grid;
-  grid-template-rows: repeat(25, 25px);
 }
 
 .coluna-direita {
@@ -380,7 +378,11 @@ a {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: 3;
-  row-gap: 40px;
+}
+
+.coluna-esquerda,
+.coluna-direita {
+  row-gap: 20px;
 }
 
 .html {
