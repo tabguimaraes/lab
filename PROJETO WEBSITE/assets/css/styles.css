@@ -21,6 +21,10 @@ font-family: 'Mulish', sans-serif;
   text-decoration: none;
 }
 
+#img-bg {
+  display: none;
+}
+
 :root {
   --font-primary: "Baloo Da 2", serif;
   --font-secundary: "Josefin Slab", serif;
