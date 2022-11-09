@@ -1,0 +1,53 @@
+* {
+  font-family: arial;
+  text-decoration: none;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+body {
+  margin: 50px;
+}
+
+.grid1 {
+  display: grid;
+  grid-template-columns: repeat(2, 200px);
+  border: 1px solid black;
+  justify-content: center;
+  gap: 10px;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(2, 400px);
+  border: 1px solid black;
+  justify-content: center;
+  height: 250px;
+  gap: 10px;
+}
+
+.elementoH3 {
+  border: 1px dashed grey;
+  text-align: center;
+}
+
+.elementoA {
+  border: 1px dashed grey;
+  /* text-align: center; */
+  background-color: red;
+  text-align: center;
+  padding: 20px;
+  height: fit-content;
+}
+
+.elementoA a {
+  color: white;
+}
+
+#testeA {
+  place-self:  center;
+  background-color: grey;
+  
+}
