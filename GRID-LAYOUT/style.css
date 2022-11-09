@@ -14,9 +14,11 @@ body {
 
 .grid1 {
   display: grid;
-  grid-template-columns: repeat(2, 200px);
+  grid-template-columns: repeat(2, 400px);
   border: 1px solid black;
   justify-content: center;
+  place-items: center end;
+  height: 450px;
   gap: 10px;
 }
 
@@ -32,6 +34,13 @@ body {
 .elementoH3 {
   border: 1px dashed grey;
   text-align: center;
+  /* place-self: center; */
+  height: 50px;
+  width: 250px;
+}
+
+.testeh3 {
+  place-self: end;
 }
 
 .elementoA {
@@ -50,4 +59,14 @@ body {
 #testeA {
   place-self: center;
   background-color: grey;
+}
+
+.estiloPeA {
+  border: 1px dashed gray;
+}
+
+.conjuntoHPeA {
+  /* display: grid; */
+  border: 1px dashed green;
+  justify-self: end;
 }
