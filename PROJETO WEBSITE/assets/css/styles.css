@@ -907,4 +907,16 @@ a {
   .sidebar {
     display: none;
   }
+
+  .bt-topo {
+    width: 25px;
+    height: 30px;
+    border-radius: 10px;
+    bottom: 30px;
+  }
+
+  .fa-arrow-up {
+    margin: auto auto;
+    font-size: large;
+  }
 }
