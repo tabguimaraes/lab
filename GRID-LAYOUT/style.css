@@ -1,6 +1,7 @@
 * {
   font-family: arial;
   text-decoration: none;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -47,7 +48,6 @@ body {
 }
 
 #testeA {
-  place-self:  center;
+  place-self: center;
   background-color: grey;
-  
 }
