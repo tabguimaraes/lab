@@ -70,3 +70,11 @@ body {
   border: 1px dashed green;
   justify-self: end;
 }
+
+.flex {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
