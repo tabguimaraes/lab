@@ -1,0 +1,144 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css");
+/* @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css"); */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap");
+
+* {
+  font-family: roboto;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  margin: 0 0.5rem;
+  /* padding: 1rem; */
+}
+
+body {
+  background-color: rgb(247, 246, 245);
+}
+
+.infos {
+  width: 1800px;
+  margin: auto;
+}
+
+.menu-superior {
+  display: grid;
+  /* margin-top: 1.5rem; */
+}
+
+.menu-superior-esquerdo {
+  /* width: 50vw; */
+  /* border: 1px dashed gray; */
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 2rem auto;
+  align-items: center;
+  justify-items: start;
+  column-gap: 2rem;
+}
+
+.nome-usuario {
+  text-align: left;
+  grid-area: 1/2;
+}
+
+.menu-superior-direito {
+  /* width: 50vw; */
+  /* border: 1px solid gray; */
+  grid-area: 1/ 2;
+  display: grid;
+  grid-template-columns: auto 6rem;
+  align-items: center;
+  justify-items: end;
+  padding: 1rem;
+  column-gap: 1rem;
+}
+
+.img-wrapper-pais {
+  max-width: 100%;
+}
+
+.img-wrapper-pais img {
+  width: 60px;
+  border-radius: 100px;
+}
+
+.fa-bell {
+  font-size: 2rem;
+  text-align: end;
+}
+
+.fa-bars {
+  font-size: 2rem;
+  text-align: left;
+  display: inline;
+  width: min-content;
+}
+
+/* .info-usuario {
+  display: grid;
+  grid-template-columns: repeat(4, 10rem);
+} */
+
+.img-wrapper-usuario {
+  margin: 3rem auto;
+  display: grid;
+  max-width: 100%;
+  /* border: 1px solid black; */
+  /* margin: auto; */
+  /* grid-column: 1/-1; */
+}
+
+.img-wrapper-usuario img {
+  justify-self: center;
+  max-width: 400px;
+  border-radius: 200px;
+  justify-items: center;
+  /* margin: auto; */
+  /* margin-left: 50%; */
+}
+
+.info-cel-batt {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.fa-mobile {
+  font-size: 4rem;
+  color: white;
+  align-self: center;
+  background-color: rgba(153, 228, 153, 0.623);
+  padding: 10px;
+  border-radius: 50px;
+}
+
+.fa-ellipsis {
+  font-size: 4rem;
+  color: rgba(153, 228, 153, 0.623);
+}
+
+.fa-battery-half {
+  font-size: 4rem;
+  color: darkslategray;
+  padding: 10px;
+  border-radius: 50px;
+  border: 1px dotted rgba(153, 228, 153, 0.89);
+}
+
+span {
+  width: 100%;
+  margin-top: 40px;
+  border-bottom: 2px dotted gray;
+  display: block;
+}
+
+.info-cel-batt p {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.info-cel-batt i {
+  margin-bottom: 20px;
+}
