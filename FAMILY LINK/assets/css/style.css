@@ -18,7 +18,7 @@ body {
 }
 
 .infos {
-  width: 1800px;
+  width: 80vw;
   margin: auto;
 }
 
@@ -82,7 +82,7 @@ body {
 } */
 
 .img-wrapper-usuario {
-  margin: 3rem auto;
+  margin: 2.5rem auto;
   display: grid;
   max-width: 100%;
   /* border: 1px solid black; */
@@ -92,7 +92,7 @@ body {
 
 .img-wrapper-usuario img {
   justify-self: center;
-  max-width: 400px;
+  width: 300px;
   border-radius: 200px;
   justify-items: center;
   /* margin: auto; */
@@ -124,7 +124,7 @@ body {
   color: darkslategray;
   padding: 10px;
   border-radius: 50px;
-  border: 1px dotted rgba(153, 228, 153, 0.89);
+  border: 9px dotted rgba(153, 228, 153, 0.89);
 }
 
 span {
@@ -141,4 +141,58 @@ span {
 
 .info-cel-batt i {
   margin-bottom: 20px;
+}
+
+.grid-inferior {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.relatorio {
+  background-color: rgba(156, 145, 145, 0.192);
+  border-radius: 4px;
+  padding: 20px;
+}
+
+.relatorio i,
+h2,
+p {
+  /* margin: 5px; */
+  font-size: 1.4rem;
+}
+
+.tempo-uso {
+  grid-column: 1/3;
+}
+
+.horario-ativo {
+  grid-column: 3/-1;
+}
+
+.limite-apps,
+.restricoes-content,
+.account-settings {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: 40px auto;
+}
+
+.limite-apps h2,
+p {
+  grid-column: 2;
+}
+
+.fa-ellipsis-vertical {
+  grid-column: 1/1;
+  grid-row: 1/-1;
+  /* display: inline; */
+  width: 20px;
+}
+
+.relatorio i{
+  place-self: center;
+  width: min-content;
+  /* font-size: large; */
 }
