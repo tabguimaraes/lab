@@ -9,7 +9,7 @@
 }
 
 html {
-  margin: 0 0.5rem;
+  margin: 0;
   /* padding: 1rem; */
 }
 
@@ -18,7 +18,7 @@ body {
 }
 
 .infos {
-  width: 80vw;
+  width: 60vw;
   margin: auto;
 }
 
@@ -156,11 +156,11 @@ span {
   padding: 20px;
 }
 
-.relatorio i,
+.relatorio,
 h2,
 p {
   /* margin: 5px; */
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 
 .tempo-uso {
@@ -171,12 +171,21 @@ p {
   grid-column: 3/-1;
 }
 
+.tempo-uso h2 {
+  margin: 10px 0;
+}
+
+.horario-ativo h2 {
+  margin: 10px 0;
+}
+
 .limite-apps,
 .restricoes-content,
 .account-settings {
   grid-column: 1/-1;
   display: grid;
-  grid-template-columns: 40px auto;
+  grid-template-columns: 40px auto 40px;
+  column-gap: 1.5rem;
 }
 
 .limite-apps h2,
@@ -191,8 +200,17 @@ p {
   width: 20px;
 }
 
-.relatorio i{
+.relatorio i {
   place-self: center;
   width: min-content;
   /* font-size: large; */
+  font-size: 2rem;
+}
+
+footer {
+  margin-top: 50px;
+  height: 150px;
+  background-color: rgba(156, 145, 145, 0.192);
+  /* position: fixed; */
+  z-index: 100;
 }
