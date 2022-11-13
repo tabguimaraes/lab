@@ -85,6 +85,18 @@ body {
   color: white;
   padding: 1vw 2vw;
   font-weight: 600;
-  border-radius: .5vw;
+  border-radius: 0.5vw;
   font-size: 1vw;
+}
+
+.teste-bg {
+  margin-top: 30px;
+  width: 1250px;
+  height: 500px;
+  background-color: blue;
+  border: 1px solid black;
+  background-image: url("./images/bikcraft.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: center;
 }
