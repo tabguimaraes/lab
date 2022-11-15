@@ -294,7 +294,7 @@ a {
 
 .banner h1 {
   color: white;
-  font-size: 3.5vw;
+  font-size: 3.6rem;
   font-family: var(--font-primary);
   font-weight: 200;
   text-shadow: 0.2vw 0.3vw 5px rgba(0, 0, 0, 0.4);
@@ -311,7 +311,7 @@ a {
 .banner p {
   font-family: var(--font-secundary);
   color: white;
-  font-size: 2vw;
+  font-size: 3rem;
   text-shadow: 0.2vw 0.3vw 5px rgba(0, 0, 0, 0.4);
   margin-bottom: 2vw;
   animation: moveBanner 1s 0.7s forwards;
@@ -369,6 +369,7 @@ a {
 
 .grid-conhecimentos {
   display: grid;
+  padding: 0 20px;
   /* grid-template-columns: repeat(30, 1fr); */
   /* grid-template-rows: 1fr 1fr 1fr; */
   row-gap: 1vw;
