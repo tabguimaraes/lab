@@ -769,11 +769,23 @@ a {
   }
 
   .conhecimento-text {
-    font-size: 0.8rem;
+    font-size: 4vw;
+    display: none;
+  }
+
+  #conhecimento-descricao {
+    grid-column: 1 / span 2;
+    /* grid-column: 1 / -1; */
+    grid-row: 3;
+    display: inline;
   }
 
   .conhecimento-header h3 {
-    font-size: 1.3rem;
+    font-size: 4vw;
+  }
+
+  .conhecimento-header i {
+    font-size: 4vw;
   }
 
   .quebra-linha {
@@ -791,7 +803,7 @@ a {
 
   .buttons {
     font-size: 0.8rem;
-    padding: 1rem 1.1rem;
+    padding: 0.5rem;
   }
 
   .conhecimentos-img-wrapper {
@@ -808,49 +820,51 @@ a {
     gap: 10px;
     padding: 10px;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    /* align-content: center; */
-    align-items: center;
-    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto 350px;
+    align-content: start;
+    place-items: center;
+    place-self: center;
     /* row-gap: 10px; */
   }
 
-  .html,
+  /* .html,
   .css,
   .design,
   .js,
   .boot,
   .git {
-    font-size: 12px;
-  }
+    font-size: 6vw;
+  } */
 
   .html {
     grid-area: 1 /1;
+    /* display: none; */
   }
 
   .css {
-    grid-area: 2 / 1;
+    grid-area: 1 / 2;
+    /* display: none; */
   }
 
   .design {
-    grid-area: 3/1;
+    grid-area: 1/3;
+    /* display: none; */
   }
 
   .js {
-    grid-area: 4 /1;
+    grid-area: 2 /1;
+    /* display: none; */
   }
 
   .boot {
-    grid-area: 5/1;
+    grid-area: 2/2;
+    /* display: none; */
   }
 
   .git {
-    grid-area: 6/1;
-  }
-
-  .conhecimento-header i {
-    font-size: 1.5rem;
+    grid-area: 2/3;
+    /* display: none; */
   }
 
   /* 
