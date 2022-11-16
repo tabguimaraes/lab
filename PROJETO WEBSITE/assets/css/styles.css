@@ -774,10 +774,12 @@ a {
   }
 
   #conhecimento-descricao {
-    grid-column: 1 / span 2;
-    /* grid-column: 1 / -1; */
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 4;
     grid-row: 3;
-    display: inline;
+    /* display: inline; */
   }
 
   .conhecimento-header h3 {
