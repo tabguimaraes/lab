@@ -761,33 +761,22 @@ a {
   }
 
   #header-conhecimento h1 {
-    font-size: 1.5rem;
-  }
-
-  .conhecimento-header {
-    font-size: 1rem;
+    font-size: 2rem;
   }
 
   .conhecimento-text {
-    font-size: 4vw;
-    display: none;
-  }
-
-  #conhecimento-descricao {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 4;
-    grid-row: 3;
-    /* display: inline; */
+    font-size: 1.2rem;
   }
 
   .conhecimento-header h3 {
-    font-size: 4vw;
+    font-size: 1.4rem;
   }
 
   .conhecimento-header i {
-    font-size: 4vw;
+    font-size: 1.4rem;
+  }
+  .conhecimento-header {
+    margin: 10px auto;
   }
 
   .quebra-linha {
@@ -819,62 +808,11 @@ a {
   }
 
   .grid-conhecimentos {
-    gap: 10px;
     padding: 10px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto auto auto 350px;
-    align-content: start;
-    place-items: center;
-    place-self: center;
-    /* row-gap: 10px; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
   }
-
-  /* .html,
-  .css,
-  .design,
-  .js,
-  .boot,
-  .git {
-    font-size: 6vw;
-  } */
-
-  .html {
-    grid-area: 1 /1;
-    /* display: none; */
-  }
-
-  .css {
-    grid-area: 1 / 2;
-    /* display: none; */
-  }
-
-  .design {
-    grid-area: 1/3;
-    /* display: none; */
-  }
-
-  .js {
-    grid-area: 2 /1;
-    /* display: none; */
-  }
-
-  .boot {
-    grid-area: 2/2;
-    /* display: none; */
-  }
-
-  .git {
-    grid-area: 2/3;
-    /* display: none; */
-  }
-
-  /* 
-
-  #header-conhecimento h1 {
-    font-size: 24px;
-  }
- */
 
   .hamburguer,
   .sidebar {
