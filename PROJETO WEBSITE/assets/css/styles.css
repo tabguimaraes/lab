@@ -100,7 +100,7 @@ input[type="checkbox"] {
 .buttons {
   text-transform: uppercase;
   letter-spacing: 0.1vw;
-  font-size: 1vw;
+  font-size: 1rem;
   font-family: var(--font-action);
   background: #fc466b;
   background: -webkit-linear-gradient(to top right, #3f5efb, #fc466b);
@@ -126,7 +126,7 @@ a {
 
 .bt-card {
   opacity: 1;
-  font-size: 0.7vw;
+  font-size: 0.7rem;
 }
 
 .bt-contato {
@@ -136,7 +136,7 @@ a {
 }
 
 .bt-contato:focus {
-  font-size: 0.8vw;
+  font-size: 0.8rem;
   font-weight: 600;
 }
 
@@ -154,7 +154,7 @@ a {
   bottom: 3.5vw;
   display: flex;
   color: white;
-  font-size: 1.5vw;
+  font-size: 1.5rem;
 }
 
 /* ÍCONE MENU */
@@ -251,7 +251,7 @@ a {
 
 .menu-link {
   font-family: var(--font-action);
-  font-size: 2vw;
+  font-size: 2rem;
   color: #555;
 }
 
@@ -272,7 +272,7 @@ a {
   color: #555;
   height: 2.5vh;
   width: 2.5vw;
-  font-size: 2vw;
+  font-size: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -338,7 +338,7 @@ a {
 
 .sessao-header h1 {
   font-family: var(--font-primary);
-  font-size: 3vw;
+  font-size: 3rem;
   font-weight: 100;
   color: #555;
   border-bottom: 3px solid #555;
@@ -378,7 +378,7 @@ ADICIONAR CARROCEL
   padding: 40px 20px;
   grid-template-columns: 4fr 1fr repeat(3, 1fr) 1fr 4fr;
   row-gap: 40px;
-  font-size: 1.2vw;
+  font-size: 1.2rem;
   /* padding-top: 14vh; */
   align-items: center;
   align-self: center;
@@ -418,10 +418,7 @@ ADICIONAR CARROCEL
   align-items: center;
   color: #4b4b4b;
   margin-bottom: 2.5vh;
-}
-
-.conhecimento-header i {
-  font-size: 3vw;
+  font-size: 1.3rem;
 }
 
 .conhecimento-header:hover {
@@ -430,14 +427,13 @@ ADICIONAR CARROCEL
 
 .conhecimento-header h3 {
   font-family: var(--font-secundary);
-  font-size: 2.5vw;
   padding-left: 1vw;
 }
 
 .conhecimento-text {
   font-family: var(--font-secundary);
   font-weight: 600;
-  /* font-size: 1.3vw; */
+  font-size: 1.1rem;
 }
 
 .conhecimentos-img-wrapper {
@@ -477,7 +473,7 @@ ADICIONAR CARROCEL
   width: 40vh;
   height: 60vh;
   position: relative;
-  font-size: 1vw;
+  font-size: 1rem;
 }
 
 .card-img-wrapper {
@@ -514,7 +510,7 @@ ADICIONAR CARROCEL
 
 .card-info h2 {
   font-family: var(--font-primary);
-  font-size: 2vw;
+  font-size: 2rem;
   font-weight: 500;
   color: #eee;
 }
@@ -585,7 +581,7 @@ ADICIONAR CARROCEL
   text-align: center;
   font-family: var(--font-primary);
   color: #272727;
-  font-size: 3vw;
+  font-size: 3rem;
   font-weight: lighter;
 }
 .sessao-contato h1:hover {
@@ -607,7 +603,7 @@ ADICIONAR CARROCEL
   background: transparent;
   border: none;
   width: 20vw;
-  font-size: 1.5vw;
+  font-size: 1.5rem;
   font-family: var(--font-secundary);
   border-bottom: 2px dashed #636363;
   outline: none;
@@ -618,7 +614,7 @@ ADICIONAR CARROCEL
   position: absolute;
   left: 0;
   top: 2vw;
-  font-size: 1.2vw;
+  font-size: 1.2rem;
   font-weight: 800;
   font-family: var(--font-secundary);
   text-transform: uppercase;
@@ -627,7 +623,7 @@ ADICIONAR CARROCEL
 
 .field:focus ~ label {
   top: 0;
-  font-size: 1vw;
+  font-size: 1rem;
   font-weight: 900;
 }
 
@@ -672,7 +668,7 @@ ADICIONAR CARROCEL
 
 .sessao-orcamento label {
   font-family: var(--font-secundary);
-  font-size: 1.5vw;
+  font-size: 1.5rem;
   font-weight: bolder;
 }
 
@@ -690,7 +686,7 @@ ADICIONAR CARROCEL
   margin-top: 3vw;
   font-family: var(--font-secundary);
   width: 6vw;
-  font-size: 2vw;
+  font-size: 2rem;
   outline: none;
   border-radius: 10px;
   border: none;
@@ -712,7 +708,7 @@ ADICIONAR CARROCEL
   padding: 0 3vw;
   color: white;
   font-family: var(--font-primary);
-  font-size: 3vw;
+  font-size: 3rem;
   font-weight: 100;
   box-shadow: 0 0.1vw 0.3vw rgba(0, 0, 0, 0, 0.5);
   border-radius: 10px;
@@ -739,14 +735,14 @@ ADICIONAR CARROCEL
 .footer-content p {
   font-family: var(--font-secundary);
   color: #a7a7a7;
-  font-size: 1.2vw;
+  font-size: 1.2rem;
   margin: auto;
 }
 
 .social-list a {
   margin: 0 1vw;
   color: #a7a7a7;
-  font-size: 1.3vw;
+  font-size: 1.3rem;
 }
 
 .social-list a:hover {
@@ -767,6 +763,22 @@ ADICIONAR CARROCEL
   transition: 500ms;
 }
 
+@media (max-width: 1200px) {
+  .banner h1 {
+    font-size: 2.5rem;
+    line-height: 0.8;
+  }
+
+  .banner p {
+    font-size: 2rem;
+  }
+
+  .buttons {
+    font-size: 0.8rem;
+    padding: 0.5rem;
+  }
+}
+
 @media (max-width: 800px) {
   #header-conhecimento {
     margin: 0;
@@ -777,8 +789,14 @@ ADICIONAR CARROCEL
     font-size: 2rem;
   }
 
+  .conhecimento {
+    border: 1px solid #262626;
+    gap: 50px;
+  }
+
   .conhecimento-text {
     font-size: 1.2rem;
+    display: none;
   }
 
   .conhecimento-header h3 {
@@ -792,9 +810,9 @@ ADICIONAR CARROCEL
     margin: 10px auto;
   }
 
-  .quebra-linha {
+  /* .quebra-linha {
     display: initial;
-  }
+  } */
 
   .banner h1 {
     font-size: 2.1rem;
@@ -813,7 +831,7 @@ ADICIONAR CARROCEL
   .conhecimentos-img-wrapper {
     display: none;
     width: 100%;
-    grid-area: 2 / 2;
+    /* grid-area: 2 / 2; */
   }
 
   .conhecimentos-img-wrapper img {
@@ -824,8 +842,21 @@ ADICIONAR CARROCEL
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
+    flex: 1;
+    width: 450px;
     gap: 10px;
+    align-content: center;
   }
+
+  /* .js,
+  .boot,
+  .git {
+    grid-column: 3;
+  } */
+
+  /* .html, .css, .design{
+    grid-column: 1;
+  } */
 
   .hamburguer,
   .sidebar {
@@ -849,14 +880,14 @@ ADICIONAR CARROCEL
 
 /* @media (max-width: 1000px) {
   .conhecimento-header i {
-    font-size: 3vw;
+    font-size: 3rem;
   }
 
   .conhecimento-header h3 {
-    font-size: 3vw;
+    font-size: 3rem;
   }
 
   .conhecimento-text {
-    font-size: 1.5vw;
+    font-size: 1.5rem;
   }
 } */
