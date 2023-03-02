@@ -58,6 +58,11 @@ input[type="checkbox"] {
   width: 13px;
 }
 
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
 /* IMAGENS DE FUNDO */
 
 .bg-images {
@@ -375,7 +380,7 @@ ADICIONAR CARROCEL
 
 .grid-conhecimentos {
   display: grid;
-  padding: 40px 20px;
+  padding: 40px 0px;
   grid-template-columns: 4fr 1fr repeat(3, 1fr) 1fr 4fr;
   row-gap: 40px;
   font-size: 1.2rem;
@@ -460,9 +465,11 @@ ADICIONAR CARROCEL
 }
 
 .projetos {
-  max-height: 50vh;
+  /* max-height: 50vh; */
   display: flex;
-  justify-content: space-evenly;
+
+  /* flex-wrap: wrap; */
+  /* justify-content: space-evenly; */
 }
 
 .card {
@@ -780,6 +787,22 @@ ADICIONAR CARROCEL
 }
 
 @media (max-width: 800px) {
+  .projetos {
+    width: fit-content;
+    padding: 20px;
+    gap: 20px;
+    border-radius: 16px;
+    overflow-x: auto;
+  }
+
+  .card {
+    border-radius: 16px;
+  }
+
+  .projetos img {
+    border-radius: 16px;
+  }
+
   #header-conhecimento {
     margin: 0;
     /* font-size: 30rem; */
