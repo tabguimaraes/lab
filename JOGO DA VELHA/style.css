@@ -1,0 +1,54 @@
+/* RESET DE ESTILOS */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.main h1 {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.grid-main {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 10px;
+  /* height: 100vh; */
+  justify-content: center;
+  align-content: center;
+  margin-top: 30px;
+}
+
+.tabuleiro {
+  width: 100px;
+  height: 100px;
+}
+
+.tabuleiro:nth-child(odd) {
+  background-color: rgb(173, 173, 173);
+}
+.tabuleiro:nth-child(even) {
+  background-color: rgb(126, 126, 126);
+}
+
+.tabuleiro p {
+  color: white;
+  font-size: 40px;
+  font-weight: bolder;
+  text-align: center;
+  margin-top: 25%;
+}
