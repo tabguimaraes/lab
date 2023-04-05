@@ -1,5 +1,13 @@
 console.log("conexão ok");
 
+let posicoes = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+  [1, 5, 9],
+  [3, 5, 7],
+];
+
 const tabuleiro = document.querySelectorAll(".tabuleiro");
 console.log(tabuleiro);
 // tabuleiro.addEventListener("click", mostrarClick);
