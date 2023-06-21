@@ -9,6 +9,22 @@ let qtde;
 function atualizar() {
   qtde = jogos.value;
   // Verificar se qtde de jogos é maior que zero e menor que 3 jogos:
+
+  // switch (true) {
+  //   case qtde <= 0:
+  //     exibir.innerHTML = "Quantidade não pode ser menor ou igual a zero";
+  //     break;
+  //   case qtde > 3:
+  //     exibir.innerHTML = "Quantidade não pode ser maior que 3 jogos";
+  //     break;
+  //   // case qtde === "":
+  //   //   exibir.innerHTML = "Escolha a quantidade de jogos";
+  //   //   break;
+  //   default:
+  //     // exibir.innerHTML = "Escolha a quantidade de jogos";
+  //     break;
+  // }
+
   if (qtde <= 0) {
     exibir.innerHTML = "Quantidade não pode ser menor ou igual a zero";
   }
