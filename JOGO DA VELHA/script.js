@@ -18,22 +18,22 @@ tabuleiro.forEach((item) => {
   item.addEventListener("click", function mostrarClick(evento) {
     console.log(evento);
     console.log(item);
-    let jogadaX = "<p>X</p>";
-    let jogada0 = "<p>0</p>";
-    item.innerHTML = jogadaX;
+    let jogadorX = "<p>X</p>";
+    let jogador0 = "<p>0</p>";
+    item.innerHTML = jogadorX;
     let jogadaAtual = item.innerHTML;
 
     let primeiraJogada = "<p>X</p>";
 
     if (item.innerText === "") {
-      if (jogadaAtual === jogadaX) {
-        item.innerHTML = jogada0;
-        jogadaAtual = jogada0;
+      if (jogadaAtual === jogadorX) {
+        item.innerHTML = jogador0;
+        jogadaAtual = jogador0;
         console.log(jogadaAtual);
       }
-      if (jogadaAtual === jogada0) {
-        item.innerHTML = jogadaX;
-        jogadaAtual = jogadaX;
+      if (jogadaAtual === jogador0) {
+        item.innerHTML = jogadorX;
+        jogadaAtual = jogadorX;
         console.log(jogadaAtual);
       }
       //   let jogadaAtual = "";
