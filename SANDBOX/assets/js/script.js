@@ -117,8 +117,9 @@ console.log(Math.round(7.89333333));
 // console.log(preco, typeof preco);
 // console.log(valorAjustado, typeof valorAjustado);
 
-const listaInteiros = [-85, 25, 59, 19, -59, -47, 62, -1, 34, -22, -42, 11, -59];
+/* const listaInteiros = [-85, 25, 59, 19, -59, -47, 62, -1, 34, -22, -42, 11, -59];
 
 listaInteiros.forEach((item) => {
   item !== 34 ? console.log(`Número ${item}`) : console.log(`Número ${item} encontrado`);
-});
+}); */
+
