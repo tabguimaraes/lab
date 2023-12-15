@@ -68,15 +68,17 @@ Todo o resto é truthy
 //   return console.log("Vc clicou");
 // }
 
-const isTruthy = "125";
+// const isTruthy = " ";
 
-function checkTruthy(isTruthy) {
-  // if(!!isTruthy)
-  return console.log(!!isTruthy);
-}
+// function checkTruthy(isTruthy) {
+//   !!isTruthy ? console.log(`É truthy`) : console.log(`Não é truthy`);
+// }
+// checkTruthy(isTruthy);
 
-checkTruthy(isTruthy);
+// // FORMA RESUMIDA DE FAZER A CHECAGEM, POIS SÓ PODE TER 2 RESULTADOS POSSÍVEIS (VERDADEIRO OU FALSO)
+// !!isTruthy ? console.log("teste") : console.log("não é teste");
 
+/**
 var quadrado = {
   lados: 4,
   area(lado) {
@@ -99,3 +101,24 @@ quadrado.total = 25;
 console.log(quadrado.total);
 
 console.log(Math.round(7.89333333));
+ */
+
+// isEven = (valor) => {
+//   valor % 2 === 0 ? console.log("É par") : console.log("É impar");
+// };
+
+// isEven(5);
+
+// let preco = (+"3451545,16".replace(",", ".")).toLocaleString("en-us");
+// let valorAjustado = +preco.replaceAll(",", "");
+
+// const formattedNumberPt = preco.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
+
+// console.log(preco, typeof preco);
+// console.log(valorAjustado, typeof valorAjustado);
+
+const listaInteiros = [-85, 25, 59, 19, -59, -47, 62, -1, 34, -22, -42, 11, -59];
+
+listaInteiros.forEach((item) => {
+  item !== 34 ? console.log(`Número ${item}`) : console.log(`Número ${item} encontrado`);
+});
