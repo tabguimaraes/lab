@@ -13,77 +13,59 @@ img {
   max-width: 100%;
 }
 
-body {
-  height: 100vh;
-}
-
-ul {
-  padding-left: 100px;
-}
-
 .main {
-  align-items: center;
-  max-width: 600px;
-  background-color: rgba(128, 128, 128, 0.123);
+  padding: 50px 0;
+  max-width: 300px;
   margin: auto;
-  display: grid;
-  grid-template-columns: 1fr;
-  border: 1px solid rgba(128, 128, 128, 0.541);
 }
 
-.input {
-  grid-column: 1/-1;
-  background-color: white;
-  border: none;
+#display {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 2.5rem;
+  overflow: hidden;
+  /* overflow-x: hidden; */
+}
+
+.keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  gap: 5px;
+  padding: 20px 0;
+  background-color: rgba(169, 169, 169, 0.39);
+}
+
+.keys button:nth-child(15) {
+  grid-column: 3/-1;
+  width: 135px;
+  margin-right: 9px;
+  border-radius: 20px;
+}
+
+.keys button:last-child {
+  grid-column: 2/-1;
+  width: 205px;
+  margin-right: 9px;
+
+  border-radius: 20px;
+  justify-content: center;
+  justify-self: end;
+  display: flex;
+}
+
+button {
+  width: 50px;
   height: 50px;
-}
-
-.buttons {
-  display: grid;
-  grid-template-columns: 4fr 1fr;
-}
-
-.numbers {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  padding: 10px;
-  gap: 10px;
-}
-
-.numbers button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  border-radius: 20px;
-  /* border: 1px solid black; */
   border: none;
-}
-.numbers button:last-child {
-  grid-column: 1/-1;
-}
-
-.operators {
-  display: grid;
-  padding: 10px;
-  gap: 10px;
-}
-.operators div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
   border-radius: 20px;
-}
-
-input:active {
-  border: none;
+  font-size: 2rem;
+  background-color: rgba(231, 231, 86, 0.966);
+  color: black;
+  /* padding: 20px; */
+  cursor: pointer;
 }
 
 button:hover {
-  cursor: pointer;
-  background-color: rgb(161, 155, 155);
-}
-button:active {
-  background-color: rgba(223, 220, 220, 0.685);
+  background-color: rgb(255, 255, 0);
 }

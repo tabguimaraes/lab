@@ -156,8 +156,12 @@ console.log(teste);
 teste = teste.replaceAll("1", "2");
 console.log(teste); */
 
-function inputValue(input) {
-  const inputValue = document.querySelector("input");
+const display = document.getElementById("display");
 
-  inputValue += input;
+function inputValue(input) {
+  display.value += input;
+}
+
+function clearDisplay() {
+  display.value = "";
 }

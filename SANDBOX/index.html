@@ -7,33 +7,27 @@
     <title>Sandbox JS</title>
   </head>
   <body>
-    <h1 id="h1">Sandbox</h1>
     <div class="main">
-      <input type="text" class="input">
-    </input>
-      <div class="buttons">
-        <div class="numbers">
-          <button onclick="inputValue()" type="button">7</button>
-          <button onclick="inputValue()" type="button">8</button>
-          <button onclick="inputValue()" type="button">9</button>
-          <button onclick="inputValue()" type="button">4</button>
-          <button onclick="inputValue()" type="button">5</button>
-          <button onclick="inputValue()" type="button">6</button>
-          <button onclick="inputValue()" type="button">1</button>
-          <button onclick="inputValue()" type="button">2</button>
-          <button onclick="inputValue()" type="button">3</button>
-          <button onclick="inputValue()" type="button">0</button>
-        </div>
-        <div class="operators">
-          <div>/</div>
-          <div>*</div>
-          <div>-</div>
-          <div>+</div>
-          <div>=</div>
-        </div>
+      <input type="text" id="display" readonly />
+      <div class="keys">
+        <button onclick="inputValue('/')">/</button>
+        <button onclick="inputValue(7)">7</button>
+        <button onclick="inputValue(8)">8</button>
+        <button onclick="inputValue(9)">9</button>
+        <button onclick="inputValue('*')">*</button>
+        <button onclick="inputValue(4)">4</button>
+        <button onclick="inputValue(5)">5</button>
+        <button onclick="inputValue(6)">6</button>
+        <button onclick="inputValue('-')">-</button>
+        <button onclick="inputValue(1)">1</button>
+        <button onclick="inputValue(2)">2</button>
+        <button onclick="inputValue(3)">3</button>
+        <button onclick="inputValue('+')">+</button>
+        <button onclick="inputValue('.')">.</button>
+        <button onclick="inputValue(0)">0</button>
+        <button onclick="clearDisplay('')">C</button>
+        <button onclick="calculate('=')">=</button>
       </div>
-
-      <!-- <div class=""></div> -->
     </div>
     <script src="./assets/js/script.js"></script>
   </body>
