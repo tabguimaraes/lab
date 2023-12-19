@@ -78,31 +78,6 @@ Todo o resto é truthy
 // // FORMA RESUMIDA DE FAZER A CHECAGEM, POIS SÓ PODE TER 2 RESULTADOS POSSÍVEIS (VERDADEIRO OU FALSO)
 // !!isTruthy ? console.log("teste") : console.log("não é teste");
 
-/**
-var quadrado = {
-  lados: 4,
-  area(lado) {
-    return lado * lado;
-  },
-  perimetro(lado) {
-    return this.lados * lado;
-  },
-  total: 20,
-};
-
-quadrado.lados; // 4
-quadrado.area(5); // 25
-quadrado.perimetro(5); // 20
-
-console.log(quadrado.area(12));
-
-quadrado.total = 25;
-
-console.log(quadrado.total);
-
-console.log(Math.round(7.89333333));
- */
-
 // isEven = (valor) => {
 //   valor % 2 === 0 ? console.log("É par") : console.log("É impar");
 // };
@@ -123,3 +98,60 @@ listaInteiros.forEach((item) => {
   item !== 34 ? console.log(`Número ${item}`) : console.log(`Número ${item} encontrado`);
 }); */
 
+// Crie uma Constructor Function (Dom) para manipulação
+// de listas de elementos do dom. Deve conter as seguintes
+// propriedades e métodos:
+//
+// elements, retorna NodeList com os elementos selecionados
+// addClass(classe), adiciona a classe a todos os elementos
+// removeClass(classe), remove a classe a todos os elementos
+
+/* function Dom(elements) {
+  this.element = document.querySelectorAll(elements);
+  this.addClass = (elementClass) => {
+    this.element.forEach((itens) => {
+      itens.classList.add(elementClass);
+    });
+  };
+  this.removeClass = (elementClass) => {
+    this.element.forEach((itens) => {
+      itens.classList.remove(elementClass);
+    });
+  };
+}
+
+const listaLi = new Dom("li");
+listaLi.addClass("ativo");
+listaLi.removeClass("ativo");
+
+listaLi.element.forEach((item) => {
+  console.log(item);
+});
+
+function Pessoa(nome, idade) {
+  this.nome = nome;
+  this.idade = idade;
+}
+
+Pessoa.prototype.andar = () => {
+  return `pessoa andou`;
+};
+
+// console.log(Pessoa.andar());
+ */
+let html = `<section>
+              <div>Sobre</div>
+              <div>Produtos</div>
+              <div>Contato</div>
+            </section>`;
+
+console.log(html);
+
+html = html.replaceAll("section", "ul").replaceAll("div", "li");
+console.log(html);
+
+let teste = "1111";
+console.log(teste);
+
+teste = teste.replaceAll("1", "2");
+console.log(teste);
