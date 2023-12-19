@@ -14,9 +14,76 @@ img {
 }
 
 body {
-  height: 800px;
+  height: 100vh;
 }
 
 ul {
   padding-left: 100px;
+}
+
+.main {
+  align-items: center;
+  max-width: 600px;
+  background-color: rgba(128, 128, 128, 0.123);
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  border: 1px solid rgba(128, 128, 128, 0.541);
+}
+
+.input {
+  grid-column: 1/-1;
+  background-color: white;
+  border: none;
+  height: 50px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+}
+
+.numbers {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  gap: 10px;
+}
+
+.numbers button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  /* border: 1px solid black; */
+  border: none;
+}
+.numbers button:last-child {
+  grid-column: 1/-1;
+}
+
+.operators {
+  display: grid;
+  padding: 10px;
+  gap: 10px;
+}
+.operators div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+}
+
+input:active {
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(161, 155, 155);
+}
+button:active {
+  background-color: rgba(223, 220, 220, 0.685);
 }

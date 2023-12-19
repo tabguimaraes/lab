@@ -139,7 +139,7 @@ Pessoa.prototype.andar = () => {
 
 // console.log(Pessoa.andar());
  */
-let html = `<section>
+/* let html = `<section>
               <div>Sobre</div>
               <div>Produtos</div>
               <div>Contato</div>
@@ -154,4 +154,10 @@ let teste = "1111";
 console.log(teste);
 
 teste = teste.replaceAll("1", "2");
-console.log(teste);
+console.log(teste); */
+
+function inputValue(input) {
+  const inputValue = document.querySelector("input");
+
+  inputValue += input;
+}
