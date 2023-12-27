@@ -6,6 +6,7 @@
   margin: 0;
   list-style: none;
   text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 img {
@@ -13,59 +14,76 @@ img {
   max-width: 100%;
 }
 
-.main {
-  padding: 50px 0;
-  max-width: 300px;
-  margin: auto;
+figure {
+  max-width: 30%;
 }
 
-#display {
-  width: 100%;
-  padding: 10px 0;
-  font-size: 2.5rem;
-  overflow: hidden;
-  /* overflow-x: hidden; */
+#titulo {
+  grid-column: 1/-1;
 }
 
-.keys {
+#grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  justify-items: center;
-  gap: 5px;
-  padding: 20px 0;
-  background-color: rgba(169, 169, 169, 0.39);
+  grid-template-columns: 1fr 2fr;
+  height: 100vh;
+  place-items: center;
 }
 
-.keys button:nth-child(15) {
-  grid-column: 3/-1;
-  width: 135px;
-  margin-right: 9px;
-  border-radius: 20px;
+#sideIMG,
+#sideLogin {
+  padding: 20px;
 }
 
-.keys button:last-child {
-  grid-column: 2/-1;
-  width: 205px;
-  margin-right: 9px;
+#sideIMG {
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
 
-  border-radius: 20px;
-  justify-content: center;
-  justify-self: end;
-  display: flex;
+#sideIMG h1 {
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+#sideLogin {
+  display: grid;
+  place-content: center;
+  color: whitesmoke;
+  background-color: rgb(31 97 167);
+  height: 100%;
+  width: 100%;
+}
+
+#sideLogin h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  grid-column: 1/-1;
+}
+
+#sideLogin form {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+label {
+  text-align: left;
 }
 
 button {
-  width: 50px;
-  height: 50px;
-  border: none;
   border-radius: 20px;
-  font-size: 2rem;
-  background-color: rgba(231, 231, 86, 0.966);
-  color: black;
-  /* padding: 20px; */
-  cursor: pointer;
+  display: block;
+  width: 100%;
+  height: 5vh;
+  border: none;
+  grid-column: 1/-1;
+  justify-self: center;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: silver;
 }
 
 button:hover {
-  background-color: rgb(255, 255, 0);
+  background-color: white;
 }

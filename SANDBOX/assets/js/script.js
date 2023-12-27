@@ -1,5 +1,3 @@
-console.log("conexão ok");
-
 /*SWITCH
 O programa primeiro procura por um caso o qual a expressão avalie como tendo o mesmo valor que o input da expressão (usando a comparação de igualdade estrita (===)) transferindo assim o controle para a cláusula encontrada e em seguida executando as instruções associadas.
 */
@@ -156,12 +154,161 @@ console.log(teste);
 teste = teste.replaceAll("1", "2");
 console.log(teste); */
 
-const display = document.getElementById("display");
+// const display = document.getElementById("display");
 
-function inputValue(input) {
-  display.value += input;
-}
+// function inputValue(input) {
+//   display.value += input;
+// }
 
-function clearDisplay() {
-  display.value = "";
-}
+// function clearDisplay() {
+//   display.value = "";
+// }
+
+/* const aulas = [
+  {
+    nome: "HTML 1",
+    min: 15,
+  },
+  {
+    nome: "HTML 2",
+    min: 10,
+  },
+  {
+    nome: "CSS 1",
+    min: 20,
+  },
+  {
+    nome: "JS 1",
+    min: 25,
+  },
+];
+
+const tempoAulas = aulas.map((aula) => aula.min);
+[15, 10, 20, 25];
+console.log(tempoAulas);
+
+const puxarNomes = (aula) => aula.nome;
+const nomesAulas = aulas.map(puxarNomes);
+// ['HTML 1', 'HTML 2', 'CSS 1', 'JS 1']
+ */
+
+/* const funcaoAutomovel = {
+  acelerar() {
+    return "acelerou";
+  },
+  buzinar() {
+    return "buzinou";
+  },
+
+  teste: "Adicionado",
+};
+
+const moto = {
+  rodas: 2,
+  capacete: true,
+};
+
+const carro = {
+  rodas: 4,
+  mala: true,
+};
+
+Object.assign(moto, funcaoAutomovel);
+Object.assign(carro, funcaoAutomovel);
+console.log(moto);
+ */
+
+// Retorne o valor total das compras
+// const compras = [
+//   {
+//     item: "Banana",
+//     preco: "R$ 4,99",
+//   },
+//   {
+//     item: "Ovo",
+//     preco: "R$ 2,99",
+//   },
+//   {
+//     item: "Carne",
+//     preco: "R$ 25,49",
+//   },
+//   {
+//     item: "Refrigerante",
+//     preco: "R$ 5,35",
+//   },
+//   {
+//     item: "Quejo",
+//     preco: "R$ 10,60",
+//   },
+// ];
+
+// let precoItem = 0;
+// compras.forEach((item) => {
+//   precoItem += +item.preco.replace("R$ ", "").replace(",", ".");
+// });
+// console.log(`A soma total dos itens da lista é de ${precoItem.toLocaleString("pt-BR", { style: "currency", currency: "BRL" })}.`);
+
+// const carro = {
+//   marca: "Ford",
+//   ano: 2018,
+// };
+
+// function descricaoCarro(marca, ano) {
+//   console.log(marca + " " + ano);
+// }
+
+// descricaoCarro() // undefined undefined
+// descricaoCarro(carro.marca, carro.ano);
+// descricaoCarro.call() // undefined undefined
+// descricaoCarro.call(carro) // Ford 2018
+
+// const listaCaracteres = `<section>
+// <p>Lobo-cinzento (nome científico:Canis lupus) é uma espécie de mamífero canídeo do gênero Canis. É um sobrevivente da Era do Gelo, originário do Pleistoceno Superior, cerca de 300 mil anos atrás. É o maior membro remanescente selvagem da família canidae.</p>
+// <p>Os lobos-cinzentos são tipicamente predadores ápice nos ecossistemas que ocupam. Embora não sejam tão adaptáveis à presença humana como geralmente ocorre com as demais.</p>
+// <p>O peso e tamanho dos lobos variam muito em todo o mundo, tendendo a aumentar proporcionalmente com a latitude.</p>
+// <p>Os lobos são capazes de percorrer longas distâncias com uma velocidade média de 10 quilômetros por hora e são conhecidos por.</p>
+// </section>
+// `;
+
+// let ArrayList = listaCaracteres.replaceAll(" ", "").split("");
+// console.log(ArrayList.length);
+
+// console.log(listaCaracteres);
+
+// const paragrafos = document.querySelectorAll("p");
+
+// let listaParagrafos = 0;
+
+// paragrafos.forEach((item) => {
+//   listaParagrafos += item.innerText.length;
+// });
+// console.log(listaParagrafos);
+/* 
+const login = new Promise((resolve) => {
+  setTimeout(() => {
+    resolve("Login Efetuado");
+  }, 1000);
+});
+const dados = new Promise((resolve) => {
+  setTimeout(() => {
+    resolve("Dados Carregados");
+  }, 1500);
+});
+
+const tudoCarregado = Promise.all([login, dados]);
+
+tudoCarregado.then((respostas) => {
+  console.log(respostas); // Array com ambas respostas
+}); */
+
+let pokeID = 2;
+
+const pokeAPI = `https://pokeapi.co/api/v2/pokemon/${pokeID}/`;
+
+const opcoes = {
+  body: '{"name":}',
+};
+
+fetch(pokeAPI);
+
+console.log(pokeAPI);

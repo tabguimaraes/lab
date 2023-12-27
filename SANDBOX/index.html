@@ -1,34 +1,31 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Sandbox JS</title>
+    <title>Login</title>
   </head>
   <body>
-    <div class="main">
-      <input type="text" id="display" readonly />
-      <div class="keys">
-        <button onclick="inputValue('/')">/</button>
-        <button onclick="inputValue(7)">7</button>
-        <button onclick="inputValue(8)">8</button>
-        <button onclick="inputValue(9)">9</button>
-        <button onclick="inputValue('*')">*</button>
-        <button onclick="inputValue(4)">4</button>
-        <button onclick="inputValue(5)">5</button>
-        <button onclick="inputValue(6)">6</button>
-        <button onclick="inputValue('-')">-</button>
-        <button onclick="inputValue(1)">1</button>
-        <button onclick="inputValue(2)">2</button>
-        <button onclick="inputValue(3)">3</button>
-        <button onclick="inputValue('+')">+</button>
-        <button onclick="inputValue('.')">.</button>
-        <button onclick="inputValue(0)">0</button>
-        <button onclick="clearDisplay('')">C</button>
-        <button onclick="calculate('=')">=</button>
+    <section id="main">
+      <div id="grid">
+        <section id="sideIMG">
+          <figure>
+            <h1 id="titulo">Bem vindo!</h1>
+            <img src="./assets/img/azure.png " alt="Logotipo Azure" />
+          </figure>
+        </section>
+        <section id="sideLogin">
+          <form action="">
+            <h1>Faça o login para continuar</h1>
+            <label for="email">Usuário</label>
+            <input type="email" id="email" />
+            <label for="senha">Senha</label>
+            <input type="password" name="" id="senha" />
+            <button>Entrar</button>
+          </form>
+        </section>
       </div>
-    </div>
-    <script src="./assets/js/script.js"></script>
+    </section>
   </body>
 </html>
