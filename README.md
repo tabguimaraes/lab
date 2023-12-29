@@ -1,6 +1,6 @@
 # LAB
 
-              ⛔ Área de testes ⛔
+<<<<<<⛔ Área de testes ⛔>>>>>>
 
 🐞 e outros problemas (☢️ ☣️) são esperados.
 
