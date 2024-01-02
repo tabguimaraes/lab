@@ -9,6 +9,7 @@
   list-style: none;
   text-decoration: none;
   font-family: "Oxanium", cursive;
+  text-transform: capitalize;
 }
 
 img {
@@ -95,6 +96,7 @@ span {
   font-size: 1.3rem;
   font-weight: 600;
   padding: 0 2.5%;
+  cursor: pointer;
 }
 
 #btnNext {
