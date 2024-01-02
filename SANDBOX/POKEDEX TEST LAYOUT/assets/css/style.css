@@ -1,0 +1,59 @@
+/* RESET DE ESTILOS */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  /* background-color: aqua; */
+  min-height: 100vh;
+}
+
+#container {
+  /* width: 100vw; */
+  /* background-image: url("../img/wallpaper.jpg"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#img {
+  position: relative;
+  height: 100vh;
+}
+
+#tv {
+  position: absolute;
+  max-height: 100vh;
+  margin: auto;
+  left: 5%;
+  right: 5%;
+  z-index: 2;
+}
+
+#bg {
+  /* background-size: cover; */
+  margin: auto;
+  position: absolute;
+  height: 84vh;
+  width: 61vw;
+  z-index: 1;
+  left: 10%;
+  bottom: 12%;
+}
+
+#pokemonDisplay {
+  z-index: 100;
+  position: absolute;
+  left: 30%;
+  top: 40%;
+  transform: translate(-20%, 0);
+  height: 20%;
+}
