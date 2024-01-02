@@ -1,29 +1,17 @@
-const container = document.querySelector(".container");
-/* let novoElemento;
-
-const elementos = [
-  { tag: "p", texto: "Esse é um parágrafo" },
-  { tag: "div", texto: "Essa é uma div" },
-  { tag: "footer", texto: "Esse é um footer" },
-  { tag: "section", texto: "Essa é uma section" },
-];
-
-elementos.forEach((item) => {
-  novoElemento = document.createElement(item.tag);
-  novoElemento.innerText = item.texto;
-  container.appendChild(novoElemento);
-});
- */
-
 function initPokemon() {
-  /* INSERIR FUNÇÃO NO FORM DE BUSCA VIA ADDEVENTLISTENER */
   function searchPokemon(pokemon) {
-    fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`).then(async (pokemon) => {
-      await pokemon.json().then((pokemon) => {
-        insertSprite(pokemon);
-        insertData(pokemon);
-        return;
-      });
+    fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`.toLowerCase()).then(async (pokemon) => {
+      if (pokemon.status != 200) {
+        document.querySelector("#pokemonInput").value = "Não encontrado";
+      } else {
+        await pokemon.json().then((pokemon) => {
+          // document.querySelector(".pokemonName").innerText = "loading";
+          document.querySelector("#pokemonInput").value = "";
+          insertSprite(pokemon);
+          insertData(pokemon);
+          return;
+        });
+      }
     });
   }
   searchPokemon("1");
@@ -76,5 +64,7 @@ function initPokemon() {
     });
   }
   formSearch();
+
+  // function insertForm ()
 }
 initPokemon();
