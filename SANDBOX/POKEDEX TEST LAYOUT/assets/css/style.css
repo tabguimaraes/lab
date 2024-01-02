@@ -177,7 +177,7 @@ span {
   top: 8%;
 } */
 
-#pokemonType {
+/* #pokemonType {
   top: 4.8%;
   position: absolute;
 }
@@ -220,10 +220,36 @@ span {
   outline: none;
   font-size: 1rem;
   font-weight: 600;
-  /* background-color: #f53434; */
+} */
+
+.teste {
+  position: absolute;
+  width: 12%;
+  left: 76%;
+  top: 9%;
+  /* display: inline; */
 }
 
-#pokemonName,
+#pokemonType,
+#pokemonHeight,
+#pokemonWeight {
+  margin-top: 3%;
+}
+
+#pokemonSearch {
+  margin-top: 12%;
+}
+
+#pokemonSearch input {
+  padding: 2%;
+  outline: none;
+  border: none;
+  font-size: 0.9rem;
+  width: fit-content;
+  font-weight: 600;
+}
+
+/* #pokemonName,
 #pokemonType,
 #pokemonHeight,
 #pokemonWeight {
@@ -234,8 +260,7 @@ span {
   font-weight: 600;
   width: 18%;
   padding-left: 1%;
-  /* background-color: white; */
-}
+} */
 
 #btnNext,
 #btnBefore {
