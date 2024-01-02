@@ -23,41 +23,22 @@ body {
 
 #container {
   width: 100vw;
-  /* background-image: url("../img/wallpaper.jpg"); */
-  /* background-repeat: no-repeat; */
-  /* background-size: cover; */
-  /* background-color: aqua; */
 }
 
-#img {
+#tvContainer {
   position: relative;
   margin: auto;
   width: fit-content;
   height: fit-content;
-  /* padding: 2%; */
-  /* background-color: gray; */
 }
 
-#tv {
+#tvBasel {
   max-height: 100vh;
   padding: 2%;
   margin: auto;
-  z-index: 20;
 }
 
-#bg {
-  /* background-size: cover; */
-  margin: auto;
-  position: absolute;
-  height: 84vh;
-  width: 61vw;
-  z-index: 1;
-  left: 10%;
-  bottom: 12%;
-}
-
-#pokemonDisplay {
-  z-index: 100;
+#pokemonSprite {
   position: absolute;
   left: 30%;
   top: 40%;
@@ -65,43 +46,10 @@ body {
   height: 20%;
 }
 
-/* #btnNext,
-#btnBefore {
-  position: absolute;
-} */
-
-/* right: 18.5%;
-bottom: 14.5%;
-z-index: -1;
-padding: 0.6%;
-border: none;
-font-size: 1.3rem;
-font-weight: 600; */
-/* #btnBefore {
-  right: 16.4%;
-  bottom: 15.6%;
-  padding: 0 2.5%;
-  border: none;
-  font-size: 1.3rem;
-  font-weight: 600;
-  border-radius: 15%;
-} */
-
 #btnBefore:hover,
 #btnNext:hover {
   background-color: blue;
 }
-
-/* #btnNext {
-  right: 5.6%;
-  bottom: 15.6%;
-  padding: 0 2.5%;
-  border: none;
-  font-size: 1.3rem;
-  font-weight: 600;
-  border-radius: 15%;
-  width: fit-content;
-} */
 
 #btnNext:active {
   background-color: blue;
@@ -112,132 +60,21 @@ span {
   display: flex;
 }
 
-/* #pokemonDataContainer {
+#pokemonData {
   position: absolute;
-  right: 5%;
-  top: 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  height: 25%;
-} */
-
-/* #pokemonName,
-#pokemonType,
-#pokemonHeight,
-#pokemonWeight,
-#pokemonSearch {
-  position: absolute;
-  left: 75.4%;
-  border-radius: 20%;
-  font-size: 0.8rem;
-  font-weight: 600;
-  width: 18%;
-  padding-left: 1%;
-  background-color: white;
-}
-
-#pokemonBefore,
-#pokemonNext {
-  display: block;
-  width: fit-content;
-}
-
-#pokemonName {
-  top: 9%;
-}
-
-#pokemonType {
-  top: 12.6%;
-}
-
-#pokemonHeight {
-  top: 16.2%;
-}
-
-#pokemonWeight {
-  top: 20%;
-}
-
-#pokemonSearch {
-  top: 24.8%;
-} */
-
-/* #pokemonSearch input {
-  padding: 1.5%;
-  border: none;
-} */
-
-/* #pokemonDataContainer {
-  background-color: white;
-  position: absolute;
-  left: 75%;
-  padding-left: 1%;
-  width: 19.3%;
-  height: 70%;
-  top: 8%;
-} */
-
-/* #pokemonType {
-  top: 4.8%;
-  position: absolute;
-}
-#pokemonHeight {
-  top: 10%;
-  position: absolute;
-}
-#pokemonWeight {
-  top: 14.6%;
-  position: absolute;
-}
-
-#pokemonName {
-  top: 9%;
-}
-
-#pokemonType {
-  top: 12.5%;
-}
-
-#pokemonHeight {
-  top: 16.5%;
-}
-
-#pokemonWeight {
-  top: 20%;
-}
-
-#pokemonSearch {
-  position: absolute;
-  top: 25.5%;
-  left: 75.5%;
-  width: 12vw;
-}
-
-#pokemonSearch input {
-  width: 100%;
-  padding: 3%;
-  border: none;
-  outline: none;
-  font-size: 1rem;
-  font-weight: 600;
-} */
-
-.teste {
-  position: absolute;
-  width: 12%;
+  width: 17%;
   left: 76%;
   top: 9%;
-  /* display: inline; */
 }
 
 #pokemonType,
 #pokemonHeight,
 #pokemonWeight {
-  margin-top: 3%;
+  margin-top: 2.5%;
 }
 
 #pokemonSearch {
-  margin-top: 12%;
+  margin-top: 7.5%;
 }
 
 #pokemonSearch input {
@@ -245,45 +82,25 @@ span {
   outline: none;
   border: none;
   font-size: 0.9rem;
-  width: fit-content;
+  width: 100%;
   font-weight: 600;
 }
-
-/* #pokemonName,
-#pokemonType,
-#pokemonHeight,
-#pokemonWeight {
-  position: absolute;
-  left: 75%;
-  border-radius: 20%;
-  font-size: 0.8rem;
-  font-weight: 600;
-  width: 18%;
-  padding-left: 1%;
-} */
 
 #btnNext,
 #btnBefore {
   position: absolute;
+  bottom: 15.6%;
   border-radius: 15%;
-  /* display: block; */
-  /* width: fit-content; */
+  border: none;
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 0 2.5%;
 }
 
 #btnNext {
   right: 5.6%;
-  bottom: 15.6%;
-  padding: 0 2.5%;
-  border: none;
-  font-size: 1.3rem;
-  font-weight: 600;
 }
 
 #btnBefore {
   right: 16.4%;
-  bottom: 15.6%;
-  padding: 0 2.5%;
-  border: none;
-  font-size: 1.3rem;
-  font-weight: 600;
 }
