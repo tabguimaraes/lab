@@ -81,7 +81,7 @@ function searchPokemon(pokemon) {
   });
 }
 
-searchPokemon("25");
+searchPokemon("96");
 
 function insertSprite(pokemon) {
   const image = pokemon["sprites"]["versions"]["generation-v"]["black-white"]["animated"]["front_default"];
