@@ -1,4 +1,4 @@
-function initPokemon() {
+/* function initPokemon() {
   function searchPokemon(pokemon) {
     fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`.toLowerCase()).then(async (pokemon) => {
       if (pokemon.status != 200) {
@@ -18,7 +18,7 @@ function initPokemon() {
 
   function insertSprite(pokemon) {
     const image = pokemon["sprites"]["versions"]["generation-v"]["black-white"]["animated"]["front_default"];
-    const pokemonSprite = document.querySelector(".pokemonSprite");
+    const pokemonSprite = document.querySelector("#pokemonDisplay");
     return pokemonSprite.setAttribute("src", image);
   }
 
@@ -68,3 +68,23 @@ function initPokemon() {
   // function insertForm ()
 }
 initPokemon();
+ */
+function searchPokemon(pokemon) {
+  fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`.toLowerCase()).then(async (pokemon) => {
+    await pokemon.json().then((pokemon) => {
+      // document.querySelector(".pokemonName").innerText = "loading";
+      // document.querySelector("#pokemonInput").value = "";
+      insertSprite(pokemon);
+      insertData(pokemon);
+      return;
+    });
+  });
+}
+
+searchPokemon("25");
+
+function insertSprite(pokemon) {
+  const image = pokemon["sprites"]["versions"]["generation-v"]["black-white"]["animated"]["front_default"];
+  const pokemonSprite = document.querySelector("#pokemonDisplay");
+  return pokemonSprite.setAttribute("src", image);
+}

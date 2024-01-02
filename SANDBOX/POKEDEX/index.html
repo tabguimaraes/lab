@@ -4,32 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Modelo</title>
+    <title>Pokedex</title>
+    <link rel="shortcut icon" href="./assets/img/favicon-16x16.png" type="image/x-icon" />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <section class="container">
-      <!-- <h1>Lorem ipsum dolor sit amet.</h1> -->
-
-      <section class="pokemonDisplay">
-        <picture>
-          <img
-            class="pokemonSprite"
-            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/6.gif"
-            alt=""
-          />
-        </picture>
-      </section>
-      <section class="pokemonData">
-        <h1 class="pokemonName">pokemonName</h1>
-        <p class="pokemonType">pokemonType</p>
-        <p class="pokemonLocation">pokemonLocation</p>
-      </section>
-      <div class="btn">
-        <button class="previous">Anterior</button>
-        <button class="next">Próximo</button>
+    <main id="container">
+      <div id="img">
+        <img
+        id="pokemonDisplay"
+        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/6.gif"
+        alt="Imagem do pokemon"
+        />
+        <img id="bg" src="./assets/img/wallpaper.jpg" alt="background" />
       </div>
-    </section>
+    </main>
     <script src="assets/js/main.js"></script>
   </body>
 </html>
