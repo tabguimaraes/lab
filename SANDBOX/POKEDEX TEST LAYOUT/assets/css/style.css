@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap");
+
 /* RESET DE ESTILOS */
 
 * {
@@ -6,6 +8,7 @@
   margin: 0;
   list-style: none;
   text-decoration: none;
+  font-family: "Oxanium", cursive;
 }
 
 img {
@@ -14,28 +17,32 @@ img {
 }
 
 body {
-  /* background-color: aqua; */
+  background: linear-gradient(to bottom, #6ab7f5, #fff);
   min-height: 100vh;
 }
 
 #container {
-  /* width: 100vw; */
+  width: 100vw;
   /* background-image: url("../img/wallpaper.jpg"); */
-  background-repeat: no-repeat;
-  background-size: cover;
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+  /* background-color: aqua; */
 }
+
 #img {
   position: relative;
-  height: 100vh;
+  margin: auto;
+  width: fit-content;
+  height: fit-content;
+  /* padding: 2%; */
+  /* background-color: gray; */
 }
 
 #tv {
-  position: absolute;
   max-height: 100vh;
+  padding: 2%;
   margin: auto;
-  left: 5%;
-  right: 5%;
-  z-index: 2;
+  z-index: 20;
 }
 
 #bg {
@@ -54,6 +61,49 @@ body {
   position: absolute;
   left: 30%;
   top: 40%;
-  transform: translate(-20%, 0);
+  transform: translate(-55%, 0);
   height: 20%;
+}
+
+#btnNext,
+#btnBefore {
+  position: absolute;
+}
+
+#btnBefore {
+  /* right: 18.5%;
+  bottom: 14.5%;
+  z-index: -1;
+  padding: 0.6%;
+  border: none;
+  font-size: 1.3rem;
+  font-weight: 600; */
+  right: 16.4%;
+  bottom: 15.6%;
+  padding: 0 2.5%;
+  border: none;
+  font-size: 1.3rem;
+  font-weight: 600;
+  border-radius: 15%;
+}
+
+#btnBefore:hover,
+#btnNext:hover {
+  background-color: blue;
+}
+
+#btnNext {
+  right: 5.6%;
+  bottom: 15.6%;
+  /* z-index: -1; */
+  padding: 0 2.5%;
+  border: none;
+  font-size: 1.3rem;
+  font-weight: 600;
+  border-radius: 15%;
+  width: fit-content;
+}
+
+#btnNext:active {
+  background-color: blue;
 }
