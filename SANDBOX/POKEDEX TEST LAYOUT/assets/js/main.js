@@ -1,11 +1,12 @@
-/* function initPokemon() {
+function initPokemon() {
+  let pokemonID;
   function searchPokemon(pokemon) {
     fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`.toLowerCase()).then(async (pokemon) => {
       if (pokemon.status != 200) {
         document.querySelector("#pokemonInput").value = "Não encontrado";
       } else {
         await pokemon.json().then((pokemon) => {
-          // document.querySelector(".pokemonName").innerText = "loading";
+          // document.querySelector("#pokemonName").innerText = "loading";
           document.querySelector("#pokemonInput").value = "";
           insertSprite(pokemon);
           insertData(pokemon);
@@ -18,73 +19,50 @@
 
   function insertSprite(pokemon) {
     const image = pokemon["sprites"]["versions"]["generation-v"]["black-white"]["animated"]["front_default"];
-    const pokemonSprite = document.querySelector("#pokemonDisplay");
+    const pokemonSprite = document.querySelector("#pokemonSprite");
     return pokemonSprite.setAttribute("src", image);
   }
 
   function insertData(pokemon) {
-    const pokemonName = document.querySelector(".pokemonName");
-    const pokemonType = document.querySelector(".pokemonType");
-    const pokemonID = document.querySelector(".pokemonID");
+    const pokemonName = document.querySelector("#pokemonName");
+    const pokemonType = document.querySelector("#pokemonType");
+    const pokemonHeight = document.querySelector("#pokemonHeight");
+    const pokemonWeight = document.querySelector("#pokemonWeight");
+    pokemonID = pokemon["id"];
 
-    pokemonName.innerText = pokemon["name"];
+    pokemonName.innerHTML = `<span><img src="./assets/img/favicon-16x16.png" alt="" /></span>&nbsp;${pokemon["id"]} - ${pokemon["name"]}`;
     pokemonType.innerText = pokemon["types"]["0"]["type"]["name"];
-    pokemonID.innerText = pokemon["id"];
+    pokemonHeight.innerText = `${(pokemon["height"] / 3.281).toFixed(2)}m`;
+    pokemonWeight.innerText = `${(pokemon["weight"] / 2.205).toFixed(1)} Kg`;
     return;
   }
 
-  function btnSearch() {
-    const btnNext = document.querySelector(".next");
-    const btnPrevious = document.querySelector(".previous");
-
-    btnNext.addEventListener("click", () => {
-      const pokemonID = +document.querySelector(".pokemonID").innerText + 1;
-      searchPokemon(pokemonID);
-    });
-    btnPrevious.addEventListener("click", () => {
-      const pokemonID = +document.querySelector(".pokemonID").innerText - 1;
-      if (pokemonID < 1) {
-      } else {
-        searchPokemon(pokemonID);
-      }
-    });
-  }
-
-  btnSearch();
-
   function formSearch() {
-    const formSearch = document.querySelector("#pokemonSearch");
+    const pokemonSearch = document.querySelector("#pokemonSearch");
     const pokemonInput = document.querySelector("#pokemonInput");
-    formSearch.addEventListener("submit", (event) => {
+    pokemonSearch.addEventListener("submit", (event) => {
       event.preventDefault();
-      if (pokemonInput.value < 1) {
-      } else {
-        searchPokemon(pokemonInput.value);
-      }
+      searchPokemon(pokemonInput.value);
     });
   }
   formSearch();
 
-  // function insertForm ()
+  function btnSearch() {
+    const btnBefore = document.querySelector("#btnBefore");
+    const btnNext = document.querySelector("#btnNext");
+    btnBefore.addEventListener("click", () => {
+      if (pokemonID <= 1) {
+      } else {
+        pokemonID = pokemonID - 1;
+        searchPokemon(pokemonID);
+      }
+    });
+    btnNext.addEventListener("click", () => {
+      pokemonID = pokemonID + 1;
+      searchPokemon(pokemonID);
+    });
+  }
+
+  btnSearch();
 }
 initPokemon();
- */
-function searchPokemon(pokemon) {
-  fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`.toLowerCase()).then(async (pokemon) => {
-    await pokemon.json().then((pokemon) => {
-      // document.querySelector(".pokemonName").innerText = "loading";
-      // document.querySelector("#pokemonInput").value = "";
-      insertSprite(pokemon);
-      insertData(pokemon);
-      return;
-    });
-  });
-}
-
-searchPokemon("150");
-
-function insertSprite(pokemon) {
-  const image = pokemon["sprites"]["versions"]["generation-v"]["black-white"]["animated"]["front_default"];
-  const pokemonSprite = document.querySelector("#pokemonDisplay");
-  return pokemonSprite.setAttribute("src", image);
-}
