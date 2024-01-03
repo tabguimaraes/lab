@@ -7,7 +7,6 @@ function initPokemon() {
         document.querySelector("#pokemonInput").value = "";
       } else {
         await pokemon.json().then((pokemon) => {
-          // document.querySelector("#pokemonName").innerText = "loading";
           document.querySelector("#pokemonInput").setAttribute("placeholder", "Nome ou número");
           document.querySelector("#pokemonInput").value = "";
           insertSprite(pokemon);
@@ -32,7 +31,7 @@ function initPokemon() {
     const pokemonWeight = document.querySelector("#pokemonWeight");
     pokemonID = pokemon["id"];
 
-    pokemonName.innerHTML = `<span><img src="./assets/img/favicon-16x16.png" alt="" /></span>&nbsp;${pokemon["id"]} - ${pokemon["name"]}`;
+    pokemonName.innerHTML = `${pokemon["id"]} - ${pokemon["name"]}&nbsp;<span><img src="./assets/img/favicon-16x16.png" alt="" /></span>`;
     pokemonType.innerText = pokemon["types"]["0"]["type"]["name"];
     pokemonHeight.innerText = `${pokemon["height"] * 10}cm`;
     pokemonWeight.innerText = `${pokemon["weight"] / 10}Kg`;
