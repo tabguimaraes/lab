@@ -63,7 +63,7 @@ span {
 #pokemonWeight,
 #pokemonSearch input {
   position: absolute;
-  left: 76%;
+  left: 76.5%;
 }
 
 #pokemonName {
@@ -85,9 +85,8 @@ span {
 #pokemonName,
 #pokemonType,
 #pokemonHeight,
-#pokemonWeight,
-#pokemonSearch input {
-  font-size: clamp(0.5rem, -0.125rem + 2vw, 1rem);
+#pokemonWeight {
+  font-size: clamp(0.5rem, -0.125rem + 2vw, 1.2vw);
   font-weight: 500;
   /* margin-left: clamp(0.5rem, -0.115rem + 2vw, 0.8rem); */
 }
@@ -106,47 +105,138 @@ span {
 
 #pokemonName > span > img {
   /* height: 75%; */
-  height: clamp(0.5rem, -0.125rem + 2vw, 1rem);
+  height: clamp(0.3rem, -0.125rem + 2vw, 1.2vw);
   /* position: absolute; */
   /* top: 2.5%; */
 }
 
 #pokemonSearch input {
+  font-size: clamp(0.5rem, -0.125rem + 2vw, 1vw);
+  font-weight: 500;
   /* padding: 2%; */
   outline: none;
   border: none;
   width: 16ch;
 }
+/* 
+@media (max-height: 768px) {
+  #pokemonName,
+  #pokemonType,
+  #pokemonHeight,
+  #pokemonWeight,
+  #pokemonSearch input {
+    left: 70%;
+  }
+  #pokemonName {
+    top: 10%;
+  }
+  #pokemonType {
+    top: 13.7%;
+  }
+  #pokemonHeight {
+    top: 17.5%;
+  }
+  #pokemonWeight {
+    top: 21.3%;
+  }
+  #pokemonSearch input {
+    top: 27%;
+  }
+}
+ */
+@media (max-height: 580px) {
+  #pokemonSearch input {
+    width: 10ch;
+  }
+  #pokemonName > span {
+    display: none;
+  }
+
+  #pokemonName {
+    top: 9%;
+  }
+  #pokemonType {
+    top: 12%;
+  }
+  #pokemonHeight {
+    top: 16%;
+  }
+  #pokemonWeight {
+    top: 20%;
+  }
+  #pokemonSearch input {
+    top: 26%;
+  }
+}
+
+@media (max-width: 400px) {
+  #pokemonSearch input {
+    width: 10ch;
+  }
+}
+
+.teste {
+  position: absolute;
+  bottom: 15%;
+  right: 3.9%;
+  width: 8.5%;
+}
+
+#btn {
+  position: relative;
+  /* width: 18.4%; */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  /* bottom: 15%; */
+  /* right: 4.5%; */
+}
 
 #btnNext,
 #btnBefore {
+  text-align: center;
+  /* display: flex; */
+  /* height: 100%; */
+  width: 100%;
+  /* width: clamp(0.2rem, 4.6rem, 14rem); */
   position: absolute;
-  bottom: 15.6%;
+  bottom: 6%;
   border-radius: 15%;
-  border: none;
-  font-size: 1.3rem;
+  /* border: none; */
+  /* font-size: clamp(0.125rem, 1.3rem, 4rem); */
+  /* font-size: clamp(1rem, 4vh, 8vh); */
+  font-size: clamp(0.5rem, -0.125rem + 2.0125vw, 160px);
   font-weight: 600;
-  padding: 0 2.5%;
+  /* padding: 0.5vw 2.5%; */
+  padding: 0 13%;
   cursor: pointer;
   color: white;
   background-color: #444;
   box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
 }
 
+#btnBefore {
+  right: 142.2%;
+}
+
+#btnNext {
+  right: 17.5%;
+}
+
 #btnNext:active,
 #btnBefore:active {
   box-shadow: inset 1px 4px 0 #222;
   font-size: 0.9rem;
-  width: 7.8%;
-  height: 4.5%;
-  padding-top: 1%;
-  bottom: 15.2%;
+  width: clamp(0.2rem, 4.6rem, 14rem);
+  /* height: 105%; */
+  padding-top: 15%;
+  padding-bottom: 5%;
+  bottom: 5.3%;
 }
 
-#btnNext {
-  right: 5.6%;
+#btnNext:active {
+  padding-left: 20%;
 }
-
-#btnBefore {
-  right: 16.4%;
+#btnBefore:active {
+  padding-right: 20%;
 }
