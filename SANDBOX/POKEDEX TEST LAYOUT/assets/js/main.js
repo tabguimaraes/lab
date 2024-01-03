@@ -3,10 +3,12 @@ function initPokemon() {
   function searchPokemon(pokemon) {
     fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`.toLowerCase()).then(async (pokemon) => {
       if (pokemon.status != 200) {
-        document.querySelector("#pokemonInput").value = "Não encontrado";
+        document.querySelector("#pokemonInput").setAttribute("placeholder", "Não encontrado");
+        document.querySelector("#pokemonInput").value = "";
       } else {
         await pokemon.json().then((pokemon) => {
           // document.querySelector("#pokemonName").innerText = "loading";
+          document.querySelector("#pokemonInput").setAttribute("placeholder", "Nome ou número");
           document.querySelector("#pokemonInput").value = "";
           insertSprite(pokemon);
           insertData(pokemon);
@@ -32,8 +34,8 @@ function initPokemon() {
 
     pokemonName.innerHTML = `<span><img src="./assets/img/favicon-16x16.png" alt="" /></span>&nbsp;${pokemon["id"]} - ${pokemon["name"]}`;
     pokemonType.innerText = pokemon["types"]["0"]["type"]["name"];
-    pokemonHeight.innerText = `${(pokemon["height"] / 3.281).toFixed(2)}m`;
-    pokemonWeight.innerText = `${(pokemon["weight"] / 2.205).toFixed(1)} Kg`;
+    pokemonHeight.innerText = `${pokemon["height"] * 10}cm`;
+    pokemonWeight.innerText = `${pokemon["weight"] / 10}Kg`;
     return;
   }
 

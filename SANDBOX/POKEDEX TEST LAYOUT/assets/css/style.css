@@ -47,15 +47,6 @@ body {
   height: 20%;
 }
 
-#btnBefore:hover,
-#btnNext:hover {
-  background-color: blue;
-}
-
-#btnNext:active {
-  background-color: blue;
-}
-
 #pokemonName,
 span {
   display: flex;
@@ -97,6 +88,19 @@ span {
   font-weight: 600;
   padding: 0 2.5%;
   cursor: pointer;
+  color: white;
+  background-color: #444;
+  box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
+}
+
+#btnNext:active,
+#btnBefore:active {
+  box-shadow: inset 1px 4px 0 #222;
+  font-size: 0.9rem;
+  width: 7.8%;
+  height: 4.5%;
+  padding-top: 1%;
+  bottom: 15.2%;
 }
 
 #btnNext {
