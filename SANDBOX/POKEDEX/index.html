@@ -4,16 +4,29 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pokedex</title>
+    <title>Quem é esse Pokémon?</title>
     <link rel="shortcut icon" href="./assets/img/favicon-16x16.png" type="image/x-icon" />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
     <main id="container">
-      <div id="img">
-        <img id="pokemonDisplay" src="" alt="Imagem do pokemon" />
-        <img id="bg" src="./assets/img/wallpaper.jpg" alt="background" />
-      </div>
+      <section id="tvContainer">
+        <img id="pokemonSprite" src="" alt="" />
+        <img id="tvBasel" src="./assets/img/tv set retro old time.png" alt="tv bazel" />
+        <!-- <section id="pokemonData"> -->
+        <p id="pokemonName"></p>
+        <p id="pokemonType"></p>
+        <p id="pokemonHeight"></p>
+        <p id="pokemonWeight"></p>
+        <form id="pokemonSearch"><input id="pokemonInput" type="text" required placeholder="Nome ou número" /></form>
+        <!-- </section> -->
+        <section class="teste">
+          <div id="btn">
+            <p id="btnBefore">&lt;&lt;</p>
+            <p id="btnNext">&gt;&gt;</p>
+          </div>
+        </section>
+      </section>
     </main>
     <script src="assets/js/main.js"></script>
   </body>
