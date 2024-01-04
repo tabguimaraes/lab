@@ -43,7 +43,16 @@ function initPokemon() {
     const pokemonInput = document.querySelector("#pokemonInput");
     pokemonSearch.addEventListener("submit", (event) => {
       event.preventDefault();
-      searchPokemon(pokemonInput.value);
+
+      if (pokemonInput.value < 1) {
+        document.querySelector("#pokemonInput").value = "";
+        document.querySelector("#pokemonInput").setAttribute("placeholder", "Não encontrado");
+        setTimeout(() => {
+          document.querySelector("#pokemonInput").setAttribute("placeholder", "Nome Ou Número");
+        }, 3000);
+      } else {
+        searchPokemon(pokemonInput.value);
+      }
     });
   }
   formSearch();
