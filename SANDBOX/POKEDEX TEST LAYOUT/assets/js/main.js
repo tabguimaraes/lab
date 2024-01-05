@@ -16,10 +16,11 @@ function initPokemon() {
       }
     });
   }
-  searchPokemon("1");
+  searchPokemon("6");
 
   function insertSprite(pokemon) {
-    const image = pokemon["sprites"]["versions"]["generation-v"]["black-white"]["animated"]["front_default"];
+    // const image = pokemon["sprites"]["versions"]["generation-v"]["black-white"]["animated"]["front_default"];
+    const image = pokemon["sprites"]["other"]["official-artwork"]["front_default"];
     const pokemonSprite = document.querySelector("#pokemonSprite");
     return pokemonSprite.setAttribute("src", image);
   }
@@ -31,7 +32,7 @@ function initPokemon() {
     const pokemonWeight = document.querySelector("#pokemonWeight");
     pokemonID = pokemon["id"];
 
-    pokemonName.innerHTML = `${pokemon["id"]} - ${pokemon["name"]}&nbsp;<span><img src="./assets/img/favicon-16x16.png" alt="" /></span>`;
+    pokemonName.innerHTML = `<span><img src="./assets/img/favicon-16x16.png" alt="" /></span>&nbsp;${pokemon["id"]} - ${pokemon["name"]}`;
     pokemonType.innerText = pokemon["types"]["0"]["type"]["name"];
     pokemonHeight.innerText = `${pokemon["height"] * 10}cm`;
     pokemonWeight.innerText = `${pokemon["weight"] / 10}Kg`;
