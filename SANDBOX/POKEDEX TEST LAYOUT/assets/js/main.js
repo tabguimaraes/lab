@@ -1,14 +1,24 @@
 function initPokemon() {
+  const pokemonName = document.querySelector("#pokemonName");
+  const pokemonType = document.querySelector("#pokemonType");
+  const pokemonHeight = document.querySelector("#pokemonHeight");
+  const pokemonWeight = document.querySelector("#pokemonWeight");
+  const pokemonSprite = document.querySelector("#pokemonSprite");
+  const pokemonSearch = document.querySelector("#pokemonSearch");
+  const pokemonInput = document.querySelector("#pokemonInput");
+  const btnBefore = document.querySelector("#btnBefore");
+  const btnNext = document.querySelector("#btnNext");
   let pokemonID;
+
   function searchPokemon(pokemon) {
     fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`.toLowerCase()).then(async (pokemon) => {
       if (pokemon.status != 200) {
-        document.querySelector("#pokemonInput").setAttribute("placeholder", "Não encontrado");
-        document.querySelector("#pokemonInput").value = "";
+        pokemonInput.setAttribute("placeholder", "Não encontrado");
+        pokemonInput.value = "";
       } else {
         await pokemon.json().then((pokemon) => {
-          document.querySelector("#pokemonInput").setAttribute("placeholder", "Nome ou número");
-          document.querySelector("#pokemonInput").value = "";
+          pokemonInput.setAttribute("placeholder", "Nome ou número");
+          pokemonInput.value = "";
           insertSprite(pokemon);
           insertData(pokemon);
           return;
@@ -16,22 +26,15 @@ function initPokemon() {
       }
     });
   }
-  searchPokemon("6");
+  searchPokemon("1");
 
   function insertSprite(pokemon) {
-    // const image = pokemon["sprites"]["versions"]["generation-v"]["black-white"]["animated"]["front_default"];
     const image = pokemon["sprites"]["other"]["official-artwork"]["front_default"];
-    const pokemonSprite = document.querySelector("#pokemonSprite");
     return pokemonSprite.setAttribute("src", image);
   }
 
   function insertData(pokemon) {
-    const pokemonName = document.querySelector("#pokemonName");
-    const pokemonType = document.querySelector("#pokemonType");
-    const pokemonHeight = document.querySelector("#pokemonHeight");
-    const pokemonWeight = document.querySelector("#pokemonWeight");
     pokemonID = pokemon["id"];
-
     pokemonName.innerHTML = `<span><img src="./assets/img/favicon-16x16.png" alt="" /></span>&nbsp;${pokemon["id"]} - ${pokemon["name"]}`;
     pokemonType.innerText = pokemon["types"]["0"]["type"]["name"];
     pokemonHeight.innerText = `${pokemon["height"] * 10}cm`;
@@ -40,16 +43,14 @@ function initPokemon() {
   }
 
   function formSearch() {
-    const pokemonSearch = document.querySelector("#pokemonSearch");
-    const pokemonInput = document.querySelector("#pokemonInput");
     pokemonSearch.addEventListener("submit", (event) => {
       event.preventDefault();
 
       if (pokemonInput.value < 1) {
-        document.querySelector("#pokemonInput").value = "";
-        document.querySelector("#pokemonInput").setAttribute("placeholder", "Não encontrado");
+        pokemonInput.value = "";
+        pokemonInput.setAttribute("placeholder", "Não encontrado");
         setTimeout(() => {
-          document.querySelector("#pokemonInput").setAttribute("placeholder", "Nome Ou Número");
+          pokemonInput.setAttribute("placeholder", "Nome Ou Número");
         }, 3000);
       } else {
         searchPokemon(pokemonInput.value);
@@ -59,8 +60,6 @@ function initPokemon() {
   formSearch();
 
   function btnSearch() {
-    const btnBefore = document.querySelector("#btnBefore");
-    const btnNext = document.querySelector("#btnNext");
     btnBefore.addEventListener("click", () => {
       if (pokemonID <= 1) {
       } else {
