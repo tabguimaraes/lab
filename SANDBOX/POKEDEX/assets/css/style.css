@@ -16,46 +16,20 @@ img {
 
 body {
   background: linear-gradient(to right, #6ab7f5, #fff, #f53434);
-  min-height: 100vh;
+  padding: 2% 1%;
 }
 
 #container {
-  width: 100vw;
-}
-
-#tvContainer {
-  position: relative;
   margin: auto;
-  width: fit-content;
+  max-width: 800px;
   height: fit-content;
+  position: relative;
 }
 
 #tvBasel {
   max-height: 100vh;
-  padding: 2%;
   margin: auto;
 }
-
-#pokemonSprite {
-  position: absolute;
-  left: 30%;
-  top: 40%;
-  transform: translate(-55%, 0);
-  height: 20%;
-}
-
-#pokemonName,
-span {
-  display: flex;
-}
-
-/* #pokemonData {
-  width: 17.9%;
-  height: 22%;
-  position: absolute;
-  left: 75.5%;
-  top: 9%;
-} */
 
 #pokemonName,
 #pokemonType,
@@ -63,152 +37,59 @@ span {
 #pokemonWeight,
 #pokemonSearch input {
   position: absolute;
-  left: 76.5%;
+  left: 77.5%;
+  font-size: clamp(0.48rem, -0.125rem + 1.2vw, 1.8vw);
+  font-weight: 600;
 }
 
-#pokemonName {
-  top: 9.5%;
-}
-#pokemonType {
-  top: 13%;
-}
-#pokemonHeight {
-  top: 17%;
-}
-#pokemonWeight {
-  top: 21%;
-}
-#pokemonSearch input {
-  top: 26.5%;
+#pokemonSprite {
+  transform: translate(-5%, 0%);
+  position: absolute;
+  top: 25%;
+  left: 14%;
+  height: 43%;
 }
 
 #pokemonName,
-#pokemonType,
-#pokemonHeight,
-#pokemonWeight {
-  font-size: clamp(0.5rem, -0.125rem + 2vw, 1.2vw);
-  font-weight: 500;
-  /* margin-left: clamp(0.5rem, -0.115rem + 2vw, 0.8rem); */
+span {
+  display: flex;
 }
 
-/* #pokemonType,
-#pokemonHeight,
+#pokemonName > span > img {
+  height: clamp(0.6rem, -0.125rem + 1.2vw, 1.8vw);
+}
+#pokemonName {
+  top: 6.8%;
+}
+#pokemonType {
+  top: 10.8%;
+}
+#pokemonHeight {
+  top: 14.8%;
+}
 #pokemonWeight {
-  margin-top: 2.5%;
-} */
+  top: 18.8%;
+}
+
+#pokemonSearch input {
+  top: 25%;
+  outline: none;
+  border: none;
+  max-width: 16ch;
+}
 
 #pokemonSearch {
-  /* margin-top: 7.5%; */
   width: fit-content;
   height: fit-content;
 }
 
-#pokemonName > span > img {
-  /* height: 75%; */
-  height: clamp(0.3rem, -0.125rem + 2vw, 1.2vw);
-  /* position: absolute; */
-  /* top: 2.5%; */
-}
-
-#pokemonSearch input {
-  font-size: clamp(0.5rem, -0.125rem + 2vw, 1vw);
-  font-weight: 500;
-  /* padding: 2%; */
-  outline: none;
-  border: none;
-  width: 16ch;
-}
-/* 
-@media (max-height: 768px) {
-  #pokemonName,
-  #pokemonType,
-  #pokemonHeight,
-  #pokemonWeight,
-  #pokemonSearch input {
-    left: 70%;
-  }
-  #pokemonName {
-    top: 10%;
-  }
-  #pokemonType {
-    top: 13.7%;
-  }
-  #pokemonHeight {
-    top: 17.5%;
-  }
-  #pokemonWeight {
-    top: 21.3%;
-  }
-  #pokemonSearch input {
-    top: 27%;
-  }
-}
- */
-@media (max-height: 580px) {
-  #pokemonSearch input {
-    width: 10ch;
-  }
-  #pokemonName > span {
-    display: none;
-  }
-
-  #pokemonName {
-    top: 9%;
-  }
-  #pokemonType {
-    top: 12%;
-  }
-  #pokemonHeight {
-    top: 16%;
-  }
-  #pokemonWeight {
-    top: 20%;
-  }
-  #pokemonSearch input {
-    top: 26%;
-  }
-}
-
-@media (max-width: 400px) {
-  #pokemonSearch input {
-    width: 10ch;
-  }
-}
-
-.teste {
-  position: absolute;
-  bottom: 15%;
-  right: 3.9%;
-  width: 8.5%;
-}
-
-#btn {
-  position: relative;
-  /* width: 18.4%; */
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  /* bottom: 15%; */
-  /* right: 4.5%; */
-}
-
 #btnNext,
 #btnBefore {
-  text-align: center;
-  /* display: flex; */
-  /* height: 100%; */
-  width: 100%;
-  /* width: clamp(0.2rem, 4.6rem, 14rem); */
   position: absolute;
-  bottom: 6%;
+  top: 81.5%;
   border-radius: 15%;
-  /* border: none; */
-  /* font-size: clamp(0.125rem, 1.3rem, 4rem); */
-  /* font-size: clamp(1rem, 4vh, 8vh); */
-  font-size: clamp(0.5rem, -0.125rem + 2.0125vw, 160px);
-  font-weight: 600;
-  /* padding: 0.5vw 2.5%; */
-  padding: 0 13%;
+  font-size: clamp(0.6rem, -0.125rem + 1.5vw, 1.8vw);
+  font-weight: 800;
   cursor: pointer;
   color: white;
   background-color: #444;
@@ -216,27 +97,24 @@ span {
 }
 
 #btnBefore {
-  right: 142.2%;
+  left: 77.5%;
+  padding: 0.2% 4.5% 0.2% 1.5%;
 }
 
 #btnNext {
-  right: 17.5%;
+  left: 88.8%;
+  padding: 0.2% 1.5% 0.2% 4.5%;
 }
 
 #btnNext:active,
 #btnBefore:active {
-  box-shadow: inset 1px 4px 0 #222;
-  font-size: 0.9rem;
-  width: clamp(0.2rem, 4.6rem, 14rem);
-  /* height: 105%; */
-  padding-top: 15%;
-  padding-bottom: 5%;
-  bottom: 5.3%;
+  padding-top: 0.5%;
 }
 
 #btnNext:active {
-  padding-left: 20%;
+  box-shadow: inset 3px 3px 0 #222;
 }
+
 #btnBefore:active {
-  padding-right: 20%;
+  box-shadow: inset -3px 3px 0 #222;
 }
