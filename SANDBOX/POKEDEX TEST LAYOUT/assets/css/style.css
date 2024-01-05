@@ -16,43 +16,38 @@ img {
 
 body {
   background: linear-gradient(to right, #6ab7f5, #fff, #f53434);
-  /* min-height: 100vh; */
   padding: 2% 1%;
 }
 
-#mainContainer {
-  width: 100vw;
-}
-
-#gridContainer {
+#container {
   margin: auto;
   max-width: 800px;
   height: fit-content;
-  /* padding: 1%; */
   position: relative;
-  /* background-color: white;
 }
 
-#tv {
-  max-height: 100vh;
-  padding: 2%;
-  grid-column: 1/-1;
-  grid-row: 1/-1;
-  /* margin: auto; */
-}
 #tvBasel {
   max-height: 100vh;
-  /* padding: 2%; */
-  /* margin: auto; */
+  margin: auto;
+}
+
+#pokemonName,
+#pokemonType,
+#pokemonHeight,
+#pokemonWeight,
+#pokemonSearch input {
+  position: absolute;
+  left: 77.5%;
+  font-size: clamp(0.48rem, -0.125rem + 1.2vw, 1.8vw);
+  font-weight: 600;
 }
 
 #pokemonSprite {
   transform: translate(-5%, 0%);
   position: absolute;
-  top: 20%;
-  left: 15%;
-  height: 45%;
-  background-color: rgba(255, 0, 0, 0.377);
+  top: 25%;
+  left: 14%;
+  height: 43%;
 }
 
 #pokemonName,
@@ -60,6 +55,9 @@ span {
   display: flex;
 }
 
+#pokemonName > span > img {
+  height: clamp(0.6rem, -0.125rem + 1.2vw, 1.8vw);
+}
 #pokemonName {
   top: 6.8%;
 }
@@ -72,48 +70,17 @@ span {
 #pokemonWeight {
   top: 18.8%;
 }
+
 #pokemonSearch input {
   top: 25%;
-}
-
-#pokemonName,
-#pokemonType,
-#pokemonHeight,
-#pokemonWeight,
-#pokemonSearch input {
-  position: absolute;
-  left: 77.5%;
-  font-size: clamp(0.6rem, -0.125rem + 1.2vw, 1.8vw);
-  font-weight: 600;
-}
-
-#pokemonSearch {
-  width: fit-content;
-  height: fit-content;
-}
-
-#pokemonName > span > img {
-  height: clamp(0.6rem, -0.125rem + 1.2vw, 1.8vw);
-
-  /* height: clamp(0.5rem, -0.125rem + 2vw, 1.2vw); */
-}
-
-#pokemonSearch input {
   outline: none;
   border: none;
   max-width: 16ch;
 }
 
-#btnGrid {
-  /* position: relative; */
-  /* width: 18.4%; */
-  grid-column: 19/24;
-  grid-row: 18;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  /* bottom: 15%; */
-  /* right: 4.5%; */
+#pokemonSearch {
+  width: fit-content;
+  height: fit-content;
 }
 
 #btnNext,
@@ -141,18 +108,13 @@ span {
 
 #btnNext:active,
 #btnBefore:active {
-  box-shadow: inset 1px 4px 0 #222;
-  font-size: 0.9rem;
-  width: clamp(0.2rem, 2.6rem, 3rem);
-  /* height: 105%; */
-  padding-top: 5%;
-  padding-bottom: 5%;
-  bottom: 5.3%;
+  padding-top: 0.5%;
 }
 
 #btnNext:active {
-  padding-left: 2%;
+  box-shadow: inset 3px 3px 0 #222;
 }
+
 #btnBefore:active {
-  padding-right: 2%;
+  box-shadow: inset -3px 3px 0 #222;
 }
