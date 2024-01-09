@@ -214,7 +214,7 @@ a {
 }
 
 .show-menu .hamburguer {
-  right: 17vw;
+  right: 23vw;
   transition: 0.6s;
 }
 
@@ -229,7 +229,7 @@ a {
 
 .sidebar {
   z-index: 100;
-  width: 20vw;
+  width: 26vw;
   height: 100vh;
   background-color: white;
   position: fixed;
@@ -706,11 +706,7 @@ ADICIONAR CARROCEL
   top: -2.5vw;
   left: 2vw;
   background: #fc466b; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #3f5efb,
-    #fc466b
-  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, #3f5efb, #fc466b); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #fc466b, #3f5efb);
   padding: 0 3vw;
   color: white;
