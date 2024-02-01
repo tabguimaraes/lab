@@ -1,0 +1,87 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap");
+
+/* RESET DE ESTILOS */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Rubik", cursive;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+#main {
+  max-width: 800px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 1%;
+  column-gap: 1%;
+}
+.fa-solid {
+  color: white;
+}
+
+.fa-brands {
+  color: white;
+  margin-right: 1%;
+}
+
+#links {
+  display: flex;
+  gap: 50px;
+  justify-content: end;
+}
+
+#links li a {
+  color: white;
+}
+
+#banner {
+  margin: auto;
+  max-width: 800px;
+  grid-column: 1/-1;
+}
+
+/* #selecaoItens {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5%;
+} */
+
+.imgMain {
+  max-width: 100%;
+}
+
+#nav {
+  background-color: #e30613;
+  padding: 1%;
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+  margin-bottom: 1%;
+}
+
+#provas,
+#simulados {
+  position: relative;
+}
+
+.tituloMain {
+  position: absolute;
+  top: 80%;
+  color: white;
+  background-color: rgba(69, 69, 69, 0.796);
+  padding: 1.5%;
+}
+
+#homeIcon {
+  color: white;
+}
