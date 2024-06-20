@@ -37,56 +37,59 @@ body {
 }
 
 #knowledgeSection {
-  background-color: grey;
   height: 100vh;
 }
 
 #knowledgeSection h1 {
   width: fit-content;
-}
-
-#knowledgeGrid {
-  width: 80vw;
   margin: auto;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  /* grid-template-rows: repeat(3, 1fr); */
-  gap: 2%;
 }
 
-.html {
-  grid-column: 1/3;
-}
+@media (max-width: 520px) {
+  #knowledgeGrid {
+    width: 80vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2%;
+  }
 
-.css {
-  grid-column: 3/5;
-}
+  #knowledgeSection > h1 {
+    padding: 2vh 0;
+  }
 
-.design {
-  grid-column: 5/-1;
-}
-
-.js,
-.boot,
-.git {
-  grid-row: 3;
-}
-
-.js {
-  grid-column: 1/3;
-}
-
-.boot {
-  grid-column: 3/5;
-}
-
-.git {
-  grid-column: 5/-1;
-}
-
-.conhecimentos-img-wrapper {
-  grid-row: 2;
-  grid-column: 3/5;
+  /* LINHAS */
+  .css {
+    grid-row: 2/7;
+  }
+  .html,
+  .design {
+    grid-row: 5/6;
+  }
+  .js,
+  .git {
+    grid-row: 7/12;
+  }
+  .boot {
+    grid-row: 9/12;
+  }
+  .conhecimentos-img-wrapper {
+    grid-row: 7/9;
+  }
+  /* COLUNAS */
+  .html,
+  .js {
+    grid-column: 1/3;
+  }
+  .css,
+  .boot,
+  .conhecimentos-img-wrapper {
+    grid-column: 3/5;
+  }
+  .design,
+  .git {
+    grid-column: 5/-1;
+  }
 }
 
 #knowledgeSection h1 {

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Teste</title>
+    <title>Teste refatoração site</title>
   </head>
   <body>
     <section id="homeSection">
@@ -19,83 +19,84 @@
     </section>
     <section id="knowledgeSection" aria-label="Sessão Conhecimentos">
       <h1>Conhecimentos</h1>
-      <section role="group" id="knowledgeGrid">
-        <div class="conhecimento html">
-          <div class="conhecimento-header">
-            <i class="fab fa-html5"></i>
-            <h3>HTML</h3>
+        <section role="group" id="knowledgeGrid">
+          <div class="conhecimento html">
+            <div class="conhecimento-header">
+              <i class="fab fa-html5"></i>
+              <h3>HTML</h3>
+            </div>
+            <div class="conhecimento-text">
+              <p>
+                O HTML (sigla para HyperText Markup Language) é o componente base da web. Isso quer dizer que ele permite a construção de websites e a
+                inserção de novos conteúdos, como imagens e vídeos, por meio dos hipertextos.
+              </p>
+            </div>
           </div>
-          <div class="conhecimento-text">
-            <p>
-              O HTML (sigla para HyperText Markup Language) é o componente base da web. Isso quer dizer que ele permite a construção de websites e a
-              inserção de novos conteúdos, como imagens e vídeos, por meio dos hipertextos.
-            </p>
+          <div class="conhecimento css">
+            <div class="conhecimento-header">
+              <i class="fab fa-css3-alt"></i>
+              <h3>CSS</h3>
+            </div>
+            <div class="conhecimento-text">
+              <p>
+                CSS é uma linguagem de estilo, também conhecida como folhas de estilo em cascata. É usada para personalização visual de um site. Ou
+                seja, elas servem para otimizar o conteúdo das páginas HTML e permitir uma apresentação mais amigável para o usuário.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="conhecimento css">
-          <div class="conhecimento-header">
-            <i class="fab fa-css3-alt"></i>
-            <h3>CSS</h3>
+          <div class="conhecimento design">
+            <div class="conhecimento-header">
+              <i class="fa-solid fa-pencil"> </i>
+              <h3>Design</h3>
+            </div>
+            <div class="conhecimento-text">
+              <p id="conhecimento-descricao">
+                Planejamento, criação e a manutenção de interfaces para websites, aplicações web e interfaces digitais em geral, levando em conta a
+                arquitetura de informações, a navegação, a usabilidade e demais aspectos do seu negócio.
+              </p>
+            </div>
           </div>
-          <div class="conhecimento-text">
-            <p>
-              CSS é uma linguagem de estilo, também conhecida como folhas de estilo em cascata. É usada para personalização visual de um site. Ou
-              seja, elas servem para otimizar o conteúdo das páginas HTML e permitir uma apresentação mais amigável para o usuário.
-            </p>
+          <div class="conhecimentos-img-wrapper">
+            <img src="assets/img/conhecimentos.png" alt="imagem conhecimentos" srcset="" />
           </div>
-        </div>
-        <div class="conhecimento design">
-          <div class="conhecimento-header">
-            <i class="fa-solid fa-pencil"> </i>
-            <h3>Design</h3>
+          <div class="conhecimento js">
+            <div class="conhecimento-header">
+              <i class="fab fa-js"></i>
+              <h3>JavaScript</h3>
+            </div>
+            <div class="conhecimento-text">
+              <p>
+                Toda vez que uma página da web faz mais do que exibir informação estática — mostrando conteúdo que se atualiza em um intervalo de
+                tempo, mapas interativos ou gráficos animados, etc. — você pode apostar que o JavaScript está envolvido! :)
+              </p>
+            </div>
           </div>
-          <div class="conhecimento-text">
-            <p id="conhecimento-descricao">
-              Planejamento, criação e a manutenção de interfaces para websites, aplicações web e interfaces digitais em geral, levando em conta a
-              arquitetura de informações, a navegação, a usabilidade e demais aspectos do seu negócio.
-            </p>
+          <div class="conhecimento boot">
+            <div class="conhecimento-header">
+              <i class="fab fa-bootstrap"></i>
+              <h3>Bootstrap</h3>
+            </div>
+            <div class="conhecimento-text">
+              <p>
+                Bootstrap é um framework front-end que fornece estruturas de CSS para a criação de sites e aplicações responsivas (mobile first) de
+                forma rápida e simples.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="conhecimentos-img-wrapper">
-          <img src="./assets/images/conhecimentos.png" alt="imagem conhecimentos" srcset="" />
-        </div>
-        <div class="conhecimento js">
-          <div class="conhecimento-header">
-            <i class="fab fa-js"></i>
-            <h3>JavaScript</h3>
+          <div class="conhecimento git">
+            <div class="conhecimento-header">
+              <i class="fab fa-github"></i>
+              <h3>Git e GitHub</h3>
+            </div>
+            <div class="conhecimento-text">
+              <p>
+                GitHub é uma plataforma de hospedagem de código-fonte e arquivos com controle de versão usando o Git. É como uma plataforma social
+                colaborativa, onde programadores e empresas de todo o mundo colocam seus projetos para o desenvolvimento do código.
+              </p>
+            </div>
           </div>
-          <div class="conhecimento-text">
-            <p>
-              Toda vez que uma página da web faz mais do que exibir informação estática — mostrando conteúdo que se atualiza em um intervalo de tempo,
-              mapas interativos ou gráficos animados, etc. — você pode apostar que o JavaScript está envolvido! :)
-            </p>
-          </div>
-        </div>
-        <div class="conhecimento boot">
-          <div class="conhecimento-header">
-            <i class="fab fa-bootstrap"></i>
-            <h3>Bootstrap</h3>
-          </div>
-          <div class="conhecimento-text">
-            <p>
-              Bootstrap é um framework front-end que fornece estruturas de CSS para a criação de sites e aplicações responsivas (mobile first) de
-              forma rápida e simples.
-            </p>
-          </div>
-        </div>
-        <div class="conhecimento git">
-          <div class="conhecimento-header">
-            <i class="fab fa-github"></i>
-            <h3>Git e GitHub</h3>
-          </div>
-          <div class="conhecimento-text">
-            <p>
-              GitHub é uma plataforma de hospedagem de código-fonte e arquivos com controle de versão usando o Git. É como uma plataforma social
-              colaborativa, onde programadores e empresas de todo o mundo colocam seus projetos para o desenvolvimento do código.
-            </p>
-          </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </section>
   </body>
 </html>
