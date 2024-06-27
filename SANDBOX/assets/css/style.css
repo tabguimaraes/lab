@@ -19,7 +19,7 @@ img {
 html {
   scroll-behavior: smooth;
   font-size: clamp(0.25rem, 0.5019rem + 0.5252vw, 1.375rem);
-  background-color: rgb(235, 235, 235);
+  background-color: rgb(245, 245, 245);
 }
 
 body {
@@ -38,9 +38,9 @@ body {
 
 #homeHeader {
   position: relative;
-  top: 30%;
-  left: 10%;
+  inset: 30% 10%; /* SUBSTITUI OS VALORES DE TOP, RIGHT, ETC */
 }
+
 #homeHeader h1 {
   font-size: 3.5rem;
   margin-bottom: 3rem;
@@ -81,7 +81,7 @@ body {
   height: 100vh;
 }
 
-#knowledgeSection h1 {
+#knowledgeSection > h1 {
   width: fit-content;
   margin: auto;
 }
