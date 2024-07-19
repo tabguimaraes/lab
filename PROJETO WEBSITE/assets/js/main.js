@@ -65,3 +65,4 @@ function atualizarPreco() {
 }
 
 //Mais um passo em frente, Miguel. Papai te ama. 23/06/2022
+"scss.hover.references": true
