@@ -1,0 +1,44 @@
+/* RESET DE ESTILOS */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  background-color: #0c1323;
+}
+
+#container {
+  display: flex;
+  gap: 100px;
+  margin: auto;
+  max-width: 1000px;
+}
+
+.cards {
+  background-color: cyan;
+  border-radius: 10px;
+  max-width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+h1 {
+  display: inline;
+  width: fit-content;
+  padding: 5px;
+  background-color: white;
+  border-radius: 20px;
+  margin: 10px auto;
+}
