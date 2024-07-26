@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/cards.css" />
+    <title>Cards</title>
+  </head>
+  <body>
+    <div id="container">
+      <div class="card" id="card1">
+        <div class="colorTop" id="topoCard1"></div>
+        <h1>1</h1>
+        <form action="" id="formCardSoma">
+          <p class="instrucao">
+            Utilizando funções e eventos de JS, faça com que ao clicar em Mostrar Resposta, calcule e exiba o resultado da soma dos números abaixo:
+          </p>
+          <input class="inputDados" id="inputSoma1" type="text" />
+          <input class="inputDados" id="inputSoma2" type="text" />
+          <button class="mostrarResposta" id="btnSoma">Mostrar Resposta</button>
+          <p class="resposta" id="linhaRespostaSoma">Resposta</p>
+        </form>
+      </div>
+      <div class="card" id="card2">
+        <div class="colorTop" id="topoCard2"></div>
+        <h1>2</h1>
+        <form action="" id="formSwitchColor">
+          <p class="instrucao">
+            Utilizando funções e eventos de JS, faça com que ao clicar em Mudar Cor, altere a cor de fundo deste card para vermelho:
+          </p>
+          <button class="mostrarResposta" id="mudarCor">Mudar Cor</button>
+        </form>
+      </div>
+      <div class="card" id="card3">
+        <div class="colorTop" id="topoCard3"></div>
+        <h1>3</h1>
+        <form action="" id="formCardMedia">
+          <p class="instrucao">
+            Utilizando funções e eventos de JS, faça com que ao clicar em Mostrar Resposta, exiba Aprovado se a média informada for maior ou igual a
+            6, caso contrário Reprovado:
+          </p>
+          <input class="inputDados" id="inputMedia" type="text" placeholder="Digite a média" />
+          <button class="mostrarResposta" id="btnMedia">Mostrar Resposta</button>
+          <p class="resposta" id="linhaRespostaMedia">Resposta</p>
+        </form>
+      </div>
+      <div class="card" id="card4">
+        <div class="colorTop" id="topoCard4"></div>
+        <h1>4</h1>
+        <form action="" id="formSwitchBG">
+          <p class="instrucao" id="pInsertBG">
+            Utilizando funções e eventos de JS, faça com que ao clicar em Mudar Background, altere a imagem de fundo desse card.
+          </p>
+          <button class="mostrarResposta" id="btnSwitchBG">Mudar Background</button>
+        </form>
+      </div>
+    </div>
+    <script src="./assets/js/cards.js"></script>
+  </body>
+</html>

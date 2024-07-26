@@ -1,0 +1,116 @@
+/* RESET DE ESTILOS */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #0c1323;
+  height: 100vh;
+  place-content: center;
+  font-family: Roboto;
+}
+
+h1 {
+  display: inline-block;
+  line-height: 40px;
+  margin: 20px auto;
+  color: white;
+  background-color: #0c1323;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+p {
+  color: white;
+}
+
+form {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 275px;
+  justify-content: space-between;
+}
+
+input,
+button {
+  height: 30px;
+  font-size: large;
+}
+
+button:hover {
+  font-weight: 600;
+}
+
+#container {
+  display: flex;
+  gap: 20px;
+  max-width: 1200px;
+}
+
+.card {
+  background-color: #1e204c;
+  border-radius: 10px;
+  width: 275px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 25px;
+  transition: transform 0.3s ease;
+}
+
+.cardVermelho {
+  background-color: red;
+}
+
+.card:hover {
+  transform: scale(1.05) translateY(-10px);
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+}
+
+.colorTop {
+  height: 20px;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.instrucao {
+  font-size: small;
+}
+
+#topoCard1 {
+  background-color: #8b0000;
+}
+#topoCard2 {
+  background-color: #338b00;
+}
+#topoCard3 {
+  background-color: #00ced1;
+}
+#topoCard4 {
+  background-color: #d15e00;
+}
+.insertBG {
+  background-image: url("../img/fundo_abstrato.jpg");
+}
+.pInsertBG {
+  color: #0c1323;
+  font-weight: 600;
+}
