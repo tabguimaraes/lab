@@ -75,16 +75,16 @@ A maior média e a menor média.
 A média geral da turma.
 */
 
-let alunos = [
-  { nome: "João", notas: [5, 8, 6, 9.5] },
-  { nome: "Maria", notas: [8, 8, 5, 7.5] },
-  { nome: "Gabriel", notas: [5, 6, 6, 10] },
-  { nome: "Lucia", notas: [7.5, 8, 6, 8] },
-];
+// let alunos = [
+//   { nome: "João", notas: [5, 8, 6, 9.5] },
+//   { nome: "Maria", notas: [8, 8, 5, 7.5] },
+//   { nome: "Gabriel", notas: [5, 6, 6, 10] },
+//   { nome: "Lucia", notas: [7.5, 8, 6, 8] },
+// ];
 
 // console.log(alunos[0].nome);
 
-let notaMedia = 0;
+// let notaMedia = 0;
 /*
 alunos.forEach((aluno) => {
   // console.log(aluno.notas);
@@ -95,3 +95,24 @@ alunos.forEach((aluno) => {
   });
 });
 */
+
+// function Carro(marca, modelo, preco) {
+//   this.marca = marca;
+//   this.modelo = modelo;
+//   this.preco = preco;
+// }
+
+// const ford = new Carro("Ford", "Ka", 50000);
+
+// console.log(ford);
+// console.log(Carro.prototype);
+
+// let jogo;
+
+// if (typeof jogo === "undefined") {
+//   console.log("Valor inexistente");
+// }
+
+// console.log(`O resultado do teste de verificação é: ${typeof jogo === "undefined"}`);
+
+// console.log(Carro.length);
