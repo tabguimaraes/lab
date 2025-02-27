@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Example</title>
+    <style>
+      .container {
+        display: flex;
+        flex-wrap: wrap; /* Permite que os itens quebrem para novas linhas */
+        width: 80%;
+        height: 300px;
+        border: 2px solid #333;
+        margin: 20px auto;
+      }
+
+      .item {
+        width: 100px;
+        height: 100px;
+        background-color: tomato;
+        color: white;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+      }
+
+      /* Testando justify-content */
+      .justify-content {
+        justify-content: center; /* Alinha os itens horizontalmente */
+      }
+
+      /* Testando align-items */
+      .align-items {
+        align-items: center; /* Alinha os itens verticalmente */
+      }
+
+      /* Testando align-content */
+      .container.align-content {
+        align-content: center; /* Alinha as linhas no eixo transversal */
+        height: 400px; /* Dando bastante espaço extra */
+        flex-wrap: wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>justify-content: center</h2>
+    <div class="container justify-content">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+    </div>
+
+    <h2>align-items: center</h2>
+    <div class="container align-items">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+    </div>
+
+    <h2>align-content: center</h2>
+    <div class="container align-content" style="height: 500px">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+    </div>
+  </body>
+</html>
