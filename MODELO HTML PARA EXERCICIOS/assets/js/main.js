@@ -1,6 +1,7 @@
 console.log("Conexão ok");
 
 const container = document.querySelector(".container");
+// const btn = document.querySelector("#btn");
 let novoElemento;
 
 const elementos = [
@@ -13,5 +14,27 @@ const elementos = [
 elementos.forEach((item) => {
   novoElemento = document.createElement(item.tag);
   novoElemento.innerText = item.texto;
-  container.appendChild(novoElemento);
+  container.append(novoElemento);
+});
+
+// async function getIP() {
+//   const response = await fetch("https://api.myip.com");
+//   // response.json();
+
+//   console.log(response.json());
+// }
+
+// btn.addEventListener("click", function (event) {
+//   event.preventDefault;
+
+//   getIP();
+// });
+
+document.getElementById("btn").addEventListener("click", async () => {
+  fetch("https://api.ipify.org?format=json")
+    .then((res) => res.json())
+    .then((dados) => {
+      document.getElementById("ip").textContent = `IP: ${dados.ip}`;
+    })
+    .catch((erro) => console.error("Erro:", erro));
 });
