@@ -1,4 +1,4 @@
-let base = 11;
+/* let base = 11;
 let ladoEsquerdo = 11;
 let ladoDireito = 11;
 let triangulo;
@@ -53,3 +53,46 @@ switch (opcaoSelecionada) {
     console.log("Opção inválida");
     break;
 }
+ */
+
+//funcao para iniciar o jogo / reiniciar (status 1 ou 0)
+//funcao para salvar a escolha do usuario em uma variavel
+// funcao para inserir a escolha do player no tabuleiro (verificar se o campo não está ocupado por outra peça)
+// funcao para verificar se o player / computador venceu o jogo
+
+let choice = 1;
+
+let tabuleiro = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+  [1, 4, 7],
+  [2, 5, 8],
+  [3, 6, 9],
+  [1, 5, 9],
+  [3, 5, 7],
+];
+
+
+let jogador, adversario;
+
+function novoJogo(iniciar) {
+  // inserir função para limpar tabuleiro
+  selecionarPeça();
+}
+
+function selecionarPeça(peçaSelecionada) {
+  jogador = peçaSelecionada;
+  jogador === "X" ? (adversario = "O") : (adversario = "X");
+}
+
+function selecionarPosicao(choice) {
+  tabuleiro.forEach((choice) => {
+    tabuleiro.pop(choice);
+  });
+}
+
+selecionarPosicao(choice);
+
+console.log(tabuleiro);
+console.log(tabuleiro.length);
