@@ -60,6 +60,8 @@ switch (opcaoSelecionada) {
 // funcao para inserir a escolha do player no tabuleiro (verificar se o campo não está ocupado por outra peça)
 // funcao para verificar se o player / computador venceu o jogo
 
+/*
+
 let choice = 1;
 
 let tabuleiro = [
@@ -96,3 +98,36 @@ selecionarPosicao(choice);
 
 console.log(tabuleiro);
 console.log(tabuleiro.length);
+
+
+*/
+
+let velocidadeVeiculo = 95;
+let velocidadeConsiderada;
+
+const velocidadePermitida = {
+  ate40km: 40,
+  ate60km: 60,
+  ate80km: 80,
+  ate100km: 100,
+  ate120km: 120,
+};
+
+velocidadeVeiculo > velocidadePermitida.ate100km
+  ? (velocidadeConsiderada = velocidadeVeiculo * 0.1 + velocidadeVeiculo)
+  : (velocidadeConsiderada = velocidadeVeiculo + 7);
+
+function verificarMulta(velocidadeConsiderada, velocidadePermitida) {
+  let valorMulta;
+
+  velocidadeConsiderada > velocidadePermitida
+    ? console.log(
+        `O valor da multa devida é de ${(valorMulta = ((velocidadeConsiderada - velocidadePermitida) * 10).toLocaleString("pt-BR", {
+          style: "currency",
+          currency: "BRL",
+        }))}`
+      )
+    : console.log(`Velocidade considerada de ${velocidadeConsiderada}km/h está dentro da velocidade permitida de ${velocidadePermitida}km/h`);
+}
+
+verificarMulta(velocidadeConsiderada, velocidadePermitida.ate100km);
